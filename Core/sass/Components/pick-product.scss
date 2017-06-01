@@ -1,0 +1,188 @@
+.pick-product {
+	padding: 50px 0 25px;
+	@media screen and (max-width: 992px) {
+		padding: 20px 0 0;
+	}
+	.pick-title {
+		position: relative;
+		p {
+			margin: 0;
+		}
+		.rightBot {
+			padding-right: 25px;
+			position: relative;
+			.btn-cr-right:after {
+				position: absolute;
+				right: 0;
+				top: 50%;
+				transform: translateY(-50%);
+				width: 25px;
+				height: 25px;
+				content: "\f054";
+			    font-family: FontAwesome;
+			    font-style: normal;
+			    font-weight: normal;
+			    text-decoration: inherit;
+			    line-height: 25px;
+			    color: $violet1;
+			}
+
+			@media screen and (min-width: 1024px){
+				padding-right: 50px;
+				position: absolute;
+				right: 0;
+				bottom: 0;
+				.btn-cr-right:after {
+					content: "\f078";
+				}
+			}
+			@media screen and (max-width: 992px){
+				margin: 15px 0;
+				.btn-cr-right:after {
+				    color: white;
+				    background: $violet1;
+				    text-align: center;
+				    border-radius: 50%;
+				    width: 40px;
+				    height: 40px;
+				    line-height: 40px;
+				    font-size: 10px;
+				}
+			}
+		}
+	}
+
+	//FORM
+	.form-pick-product {
+		text-align: center;
+		font-size: 0;
+		padding: 40px 0;
+		ul {
+			list-style-type: none;
+			font-size: 0;
+			display: inline-block;
+			text-align: left;
+			li {
+				display: inline-block;
+				font-size: 16px;
+				vertical-align: middle;
+				color: $greyText;
+				padding: 10px;
+				@media screen and (max-width: 1200px){
+				    padding: 10px 3px;
+				}
+				.jcf-select {
+					margin: 0;
+					border: 0;
+					border-bottom: 2px solid #e8e8e8;
+					height: 30px;
+					.jcf-select-opener {
+						background: none;
+					}
+					.jcf-select-text {
+						span {
+							font-family: 'DINPro-Bold';
+							color: $violet1;
+							line-height: 30px;
+						}
+					}
+					&.jcf-focus {
+						border-bottom: 2px solid #e8e8e8 !important;
+					}
+				}
+			}
+		}
+		.jcf-radio {
+			margin: 0 5px;
+			width: 25px;
+			height: 25px;
+			border: 0;
+			@include border-radius(0);
+			span {
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				@include border-radius(0);
+			}
+		}
+		.male {
+			.jcf-radio.jcf-unchecked {
+				background: url('../images/male-unchecked.png') no-repeat;
+				background-size: contain;
+			}
+			.jcf-radio.jcf-checked {
+				span {
+					background: url('../images/male-checked.png') no-repeat;
+					background-size: contain;
+				}
+			}
+		}
+		.female {
+			.jcf-radio.jcf-unchecked {
+				background: url('../images/female-unchecked.png') no-repeat;
+				background-size: contain;
+			}
+			.jcf-radio.jcf-checked {
+				span {
+					background: url('../images/female-checked.png') no-repeat;
+					background-size: contain;
+				}
+			}
+		}
+
+		.form-select {
+
+			.jcf-select-text {
+				span {
+					line-height: 30px;
+				}
+			}
+			.jcf-select-opener {
+				background: none;
+				&:after {
+					position: absolute;
+					right: 0;
+					top: 50%;
+					transform: translateY(-50%);
+					width: 15px;
+					height: 15px;
+					content: "\f078";
+				    font-family: FontAwesome;
+				    font-style: normal;
+				    font-weight: normal;
+				    text-decoration: inherit;
+				    text-align: center;
+				    font-size: 12px;
+				    line-height: 15px;
+				    color: #e8e8e8;
+				}
+			}
+		}
+
+		.submit {
+			@include border-radius(50%);
+			background: $violet1;
+			color: white;
+			padding: 15px 20px;
+			@media screen and (max-width: 1024px){
+			    padding: 10px 15px;
+			}
+		}
+	}
+}
+
+//select dropdown
+.jcf-select-drop {
+	.jcf-select-drop-content {
+		border: 1px solid #e8e8e8;
+		.jcf-option {
+			font-family: 'DINPro-Bold';
+			color: $greyText4;
+			padding: 10px;
+			&.jcf-hover {
+				color: $greyText3;
+			}
+		}
+	}
+}

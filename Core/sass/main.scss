@@ -1,0 +1,70 @@
+@import "bourbon";
+
+/*FONTS*/
+@import
+    'fonts/fonts';
+    
+/* ABSTRACTS */
+@import
+    'Abstracts/variables',
+    'Abstracts/functions',
+    'Abstracts/mixins',
+    'Abstracts/placeholders';
+
+/* BASE */
+@import
+    'base/fonts',
+    'base/reset',
+    'base/helper';
+
+/* COMPONENT */
+@import
+    'Components/buttons',
+    'Components/avrist-banner-2',
+    'Components/avrist-banner-1',
+    'Components/avrist-banner-3',
+    'Components/avrist-banner-4',
+    'Components/pick-product',
+    'Components/avrist-banner-thumbnail-1',
+    'Components/avrist-slider-because-1',
+    'Components/avrist-commitment-1',
+    'Components/invest-plan',
+    'Components/avrist-slider-2',
+    'Components/avrist-slider-3',
+    'Components/avrist-thumbnail-white-1',
+    'Components/avrist-thumbnail-white-2',
+    'Components/avrist-thumbnail-1',
+    'Components/avrist-thumbnail-2',
+    'Components/selects',
+    'Components/compare-product',
+    'Components/avrist-banner-5',
+    'Components/avrist-simulasi-produk-1',
+    'Components/avrist-slider-4',
+    'Components/avrist-faq-1',
+    'Components/big-circle',
+    'Components/avrist-faq-2',
+    'Components/avrist-tab-1',
+    'Components/thumbnail-karyawan',
+    'Components/avrist-search-faq-1',
+    'Components/avrist-contact-form-1',
+    'Components/tick-violet',
+    'Components/input-text-style',
+    'Components/avrist-pick-office',
+    'Components/avrist-years-1',
+    'Components/avrist-threebox-1',
+    'Components/avrist-visi-misi',
+    'Components/avrist-news-1',
+    'Components/theme',
+    'Components/avrist-search-result',
+    'Components/update-dana-nav-harian',
+    'Components/avrist-job-search-1',
+    'Components/avrist-financial-report-1',
+    'Components/avrist-map-1';
+    
+/* LAYOUT */
+@import
+    'Layout/header',
+    'Layout/container',
+    'Layout/footer',
+    'Layout/form',
+    'Layout/navigation';

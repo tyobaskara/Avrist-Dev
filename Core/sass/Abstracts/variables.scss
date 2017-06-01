@@ -1,0 +1,134 @@
+// FONT FAMILY
+$font_idx: 1;
+$font_default: Helvetica, Arial, sans-serif !default;
+
+// Font Family Ex. (name, 'fonts/path')
+$font_family: (
+    FuturaStd-Book: 'fonts/FuturaStd-Book_gdi',
+    FuturaStd-Light: 'fonts/FuturaStd-Light_gdi',
+    FuturaStd-Medium: 'fonts/FuturaStd-Medium_gdi',
+    FuturaStd-Bold: 'fonts/FuturaStd-Bold_gdi',
+    FuturaStd-Heavy: 'fonts/FuturaStd-Heavy_gdi',
+); 
+
+// BUTTONS
+// Default Button Ex. (button-class, background-code, font-color)
+$buttons:
+    ('btn-red', #D9534F, #FFFFFF),
+    ('btn-blue', #337AB7, #FFFFFF),
+    ('btn-green', #5CB85C, #FFFFFF);
+
+// text-align
+$align: left center right;
+
+// vertical-align
+$vertical-align: top middle bottom;
+
+// float
+$float: left right;
+
+// position
+$position: top right bottom left;
+
+// media-query
+$media-query:
+    (laptop, (min-width: 1366px)),
+    (desktop, (min-width: 1200px)),
+    (wide, (min-width: 992px)),
+    (tablet, (min-width: 768px) and (max-width: 991px)),
+    (mobile, (max-width: 767px)),
+    (small-mobile, (max-width: 360px));
+
+//COLORS
+$violet1: #542888;
+$greyHeader: #343434;
+$grey1: #7f8aa3;
+$greyTitle: #858585;
+$greyText: #7b7b7b;
+$greyText2: #9e9e9e;
+$greyText3: #7c7c7c;
+$greyText4: #a4a4a4;
+$because1: #818181;
+$green1: #569792;
+$green2: #b4bf35;
+$plangreen1: #6fc342;
+$yellow1: #fdb61f;
+$yellow2: #fcb61f;
+$circleTitle1: #a685c2;
+$a4: #a4a4a4;
+$white2: #f3f3f3;
+$grey2: #f8f8f8;
+$red1: #b20446;
+
+.color-red1 {
+    color:  $red1 !important;
+}
+.color-faq-title {
+    color: #bdbdbd !important;
+}
+.color-a4 {
+    color: $a4 !important;
+}
+.color-white {
+    color: white !important;
+}
+.color-grey-title {
+    color: $greyTitle !important;
+}
+.color-circle-title {
+    color: $circleTitle1 !important;
+}
+.color-ali {
+    color: $violet1 !important;
+}
+.color-agi {
+    color: $grey1 !important;
+}
+.color-aam {
+    color: $green1 !important;
+}
+.color-green-plan {
+    color: $plangreen1 !important;
+}
+.color-because1 {
+    color: $because1 !important;
+}
+.color-grey {
+    color: $greyText3 !important;
+}
+.color-grey3 {
+    color: $greyText !important;
+}
+.color-grey2 {
+    color: $greyText4 !important;
+}
+.color-grey4 {
+    color: $grey2 !important;
+}
+.bg-white {
+    background: white !important;
+}
+.bg-f4f4f4 {
+    background: #f4f4f4 !important;
+}
+.bg-ali {
+    background: $violet1 !important;
+}
+.bg-agi {
+    background: $grey1 !important;
+}
+.bg-aam {
+    background: $green1 !important;
+}
+.bg-grey {
+    background: $greyText3 !important;
+}
+.bg-grey2 {
+    background: $grey2 !important;
+}
+.bg-green2 {
+    background: $green2 !important;
+}
+.bg-yellow1 {
+    background: $yellow1 !important;
+}

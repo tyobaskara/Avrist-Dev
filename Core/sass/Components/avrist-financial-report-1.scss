@@ -1,0 +1,47 @@
+.avrist-search-result.avrist-financial-report-1 {
+	@media screen and (min-width: 1024px) {
+		ul>li:first-child {
+		    width: 115px;
+		}
+		ul>li:last-child {
+		    width: calc(100% - 115px);
+		}
+	}
+
+	.laporan-slider {
+		overflow: hidden;
+		margin: 0 -10px;
+		a {
+			display: block;
+			height: 250px;
+			position: relative;
+			@media screen and (max-width: 1023px) {
+				height: 200px;
+			}
+			.pdf {
+				position: absolute;
+				top: 40%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+			span {
+				position: absolute;
+				bottom: 40px;
+				left: 0;
+				right: 0;
+				text-align: center;
+			}
+		}
+		.search-resulted {
+			border: 0;
+			padding: 40px 10px;
+			width: 25%;
+			float: left;
+			@media screen and (max-width: 1023px) {
+				width: 200px;
+				padding: 20px 10px;
+				padding-top: 30px;
+			}
+		}
+	}
+}

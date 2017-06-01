@@ -1,0 +1,23 @@
+
+.avrist-tab-1 {
+	.banner-2-tabs {
+		li {
+			transition: all .3s ease-in-out;
+			opacity: 1;
+			&.active {
+				opacity: 1;
+			}
+		}
+	}
+	.line-height-2-5 {
+		line-height: 2.5;
+		@media screen and (max-width: 1023px) {
+			line-height: 1.5;
+		}
+	}
+	.col-md-6 {
+		@media screen and (max-width: 1023px) {
+			padding: 0;
+		}
+	}
+}

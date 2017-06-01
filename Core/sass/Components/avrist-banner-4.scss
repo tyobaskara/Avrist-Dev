@@ -1,0 +1,33 @@
+.ban4-link.select-tab {
+    position: absolute;
+    left: 0;
+    bottom: 100px;
+    right: 0;
+    text-align: center;
+    @media screen and (min-width: 1500px) {
+    	bottom: 125px;
+    }
+	.jcf-select {
+		width: 500px;
+		display: block;
+		margin: auto;
+		text-align: left;
+	}
+	.jcf-select-opener {
+		&:after {
+			color: $violet1;
+		}
+	}
+    @media screen and (max-width: 992px){
+	    position: initial;
+	    left: auto;
+	    bottom: auto;
+	    right: auto;
+	    text-align: left;
+	    .jcf-select {
+			width: 100%;
+			display: block;
+			margin: auto;
+		}
+    }
+}

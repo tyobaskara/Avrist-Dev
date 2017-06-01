@@ -1,0 +1,27 @@
+.avrist-commitment-1 {
+	margin: 50px 0;
+	@media screen and (max-width: 1023px){
+		margin: 10px 0;
+	}
+	.commitment-bg {
+		@media screen and (min-width: 1024px){
+			//background: url('../images/commitment-bg.png');
+			background-repeat: no-repeat !important;
+			background-size: contain !important;
+			background-position: 0 50% !important;
+	    	min-height: 500px;
+		}
+		@media screen and (max-width: 1023px) {
+			background: none !important;
+		}
+	}
+	.commitment-right {
+		@media screen and (max-width: 1023px){
+			img {
+				width: 90%;
+				display: block;
+				margin: auto;
+			}
+		}
+	}
+}

@@ -1,0 +1,115 @@
+.avrist-threebox-1 {
+	.col-md-4 {
+		padding: 0 5px;
+	}
+	.row {
+		margin: 0 -5px;
+	}
+	.atb1-box {
+		padding: 25px;
+		min-height: 200px;
+		ul {
+			margin: 0;
+			list-style-type: none;
+			font-size: 0;
+			li {
+				display: inline-block;
+				font-size: initial;
+			}
+		}
+		img {
+			display: block;
+		}
+		.title , .text {
+			color: white;
+		}
+		.title {
+			font-size: 21px;
+			margin-top: 20px;
+		}
+		.text {
+			font-size: 14px;
+		}
+	}
+
+	@media screen and (max-width: 1023px) {
+		.container {
+			padding: 0;
+		}
+		.col-md-4 {
+			padding: 0;
+			&:last-child {
+				.atb1-box {
+					&:after {
+						border-bottom: 0;
+					}
+				}
+			}
+		}
+		.row {
+			margin: 0;
+		}
+		.atb1-box {
+			min-height: auto;
+			background: $white2 !important;
+			padding: 15px;
+			position: relative;
+			&:after {
+				content: ' ';
+				position: absolute;
+				bottom: 0;
+				width: calc(100% - 30px);
+				left: 0;
+				right: 0;
+				margin: auto;
+				height: 1px;
+				border-bottom: 1px solid #c3c2c2;
+			}
+			ul {
+				li {
+					vertical-align: top;
+					&:first-child {
+					    width: 22%;
+    					padding: 0px 15px;
+					}
+					&:last-child {
+						width: 78%;
+					}
+				}
+			}
+			&.life {
+				.title {
+					color: $violet1;
+				}
+				.text {
+					color: $greyText3;
+				}
+			}
+			&.sharia {
+				.title {
+					color: $green2;
+				}
+				.text {
+					color: $greyText3;
+				}
+			}
+			&.pension {
+				.title {
+					color: $yellow1;
+				}
+				.text {
+					color: $greyText3;
+				}
+			}
+			
+			.title {
+				font-size: 21px;
+				margin-top: 0;
+			}
+			.text {
+				font-size: 12px;
+			}
+
+		}
+	}
+}

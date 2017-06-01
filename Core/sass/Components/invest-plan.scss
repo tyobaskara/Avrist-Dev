@@ -1,0 +1,185 @@
+.invest-plan {
+	background: #f4f4f4;
+	padding: 25px 0;
+	.plan-list {
+		list-style-type: none;
+		font-size: 0;
+		margin: 0;
+		> li {
+			display: inline-block;
+			font-size: initial;
+			vertical-align: middle;
+			&:first-child {
+				width: 20%;
+			}
+			&:last-child {
+				width: 80%;
+			}
+
+			@media screen and (max-width: 1023px) {
+				&:first-child, &:last-child {
+					width: 100%;
+				}
+			}
+		}
+
+		.sliderWrapper {
+			padding: 20px;
+			@media screen and (max-width: 1023px) {
+				padding: 20px 0;
+			}
+			.planSlider {
+				background: white;
+				padding: 20px;
+				box-shadow: 0px 0px 5px #efefef;
+				ul {
+					font-size: 0;
+				}
+				li {
+					font-size: initial;
+					vertical-align: middle;
+					display: inline-block;
+					padding: 0 40px;
+					@media screen and (max-width: 1024px) {
+						padding: 0 20px;
+					}
+					&:first-child {
+						padding-left: 0;
+					}
+				}
+				p {
+					margin: 0;
+					line-height: 1;
+				}
+				.before {
+					border-right: 1px solid #efefef;
+					p {
+						color: #a4a4a4;
+					}
+				}
+				.after {
+					p {
+						color: #7c7c7c;
+					}
+				}
+				.status {
+					img {
+					    vertical-align: bottom;
+					    margin-right: 10px;
+				        display: inline-block;
+					}
+				}
+
+				.slick-arrow {
+					z-index: 25;
+					transform: none;
+					top: 50%;
+					transform: translateY(-50%);
+					width: 25px;
+					height: 25px;
+					@media screen and (max-width: 1023px) {
+						width: 25px;
+						height: 25px;
+					}
+					&:hover {
+						cursor: pointer;
+					}
+					&.slick-prev {
+						left: auto;
+						right: 60px;
+						@media screen and (max-width: 1023px) {
+							right: auto;
+							left: -10px;
+						}
+						&:before {
+							content: ' ';
+							background: url('../images/plan-invest-slider-arrow-right.png') no-repeat center;
+							background-size: contain;
+							position: absolute;
+						    top: 0;
+						    left: 0;
+						    right: 0;
+						    bottom: 0;
+						    transform: rotate(180deg);
+						}
+					}
+					&.slick-next {
+						left: auto;
+						right: 20px;
+						@media screen and (max-width: 1023px) {
+							right: -10px;
+						}
+						&:before {
+							content: ' ';
+							background: url('../images/plan-invest-slider-arrow-right.png') no-repeat center;
+							background-size: contain;
+							position: absolute;
+						    top: 0;
+						    left: 0;
+						    right: 0;
+						    bottom: 0;
+						}
+					}
+				}
+
+				//MOBILE
+				@media screen and (max-width: 1023px){
+					.slick-slide {
+						> ul {
+							> li {
+								width: calc(100% / 3);
+								padding: 0;
+								&:first-child {
+									width: 100%;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.select-plan {
+		.jcf-select {
+			margin: 0;
+			border: 0;
+			width: 100%;
+			border-bottom: 2px solid #e8e8e8;
+			height: 50px;
+			background: none;
+			.jcf-select-opener {
+				background: none;
+			}
+			.jcf-select-text {
+				span {
+					font-family: 'DINPro-Bold';
+					color: $greyText3;
+					line-height: 50px;
+				}
+			}
+			&.jcf-focus {
+				border-bottom: 2px solid #e8e8e8 !important;
+			}
+		}
+		.jcf-select-opener {
+			background: none;
+			&:after {
+				position: absolute;
+				right: 0;
+				top: 25px;
+				transform: translateY(-50%);
+				width: 25px;
+				height: 25px;
+				content: "\f078";
+			    font-family: FontAwesome;
+			    font-style: normal;
+			    font-weight: normal;
+			    text-decoration: inherit;
+			    text-align: center;
+			    font-size: 12px;
+			    line-height: 25px;
+			    color: $greyText3;
+			}
+		}
+	}
+}

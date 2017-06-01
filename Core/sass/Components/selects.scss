@@ -1,0 +1,42 @@
+.select-style-1 {
+	.jcf-focus {
+		border-color: $violet1 !important;
+	}
+	.jcf-select {
+		width: 100%;
+		border: none;
+		border-bottom: 2px solid $violet1;
+		height: 50px;
+	}
+	.jcf-select-text {
+		line-height: 50px;
+		span {
+		    font-size: 20px;
+		    color: $violet1;
+		}
+	}
+	.jcf-select-opener {
+		background: none;
+		&:after {
+		    position: absolute;
+		    right: 0;
+		    top: 0;
+		    width: 25px;
+		    height: 25px;
+		    content: "\f078";
+		    font-family: FontAwesome;
+		    font-style: normal;
+		    font-weight: normal;
+		    text-decoration: inherit;
+		    text-align: center;
+		    font-size: 12px;
+		    line-height: 50px;
+		    color: #542888;
+		    bottom: 0;
+		}
+	}
+}
+
+.jcf-select-text:hover, .jcf-radio:hover > input {
+	cursor: pointer !important;
+}

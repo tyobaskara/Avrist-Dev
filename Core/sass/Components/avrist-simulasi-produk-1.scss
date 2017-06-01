@@ -1,0 +1,23 @@
+.avrist-simulasi-produk-1 {
+	//background: url('../images/simulasi-bg.jpg') no-repeat;
+	background-repeat: no-repeat !important;
+	background-size: contain !important;
+	height: 285px;
+	background-position: center center !important;
+	position: relative;
+	.middle {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: 0;
+		right: 0;
+	}
+	@media screen and (max-width: 1023px) {
+		height: auto;
+		background: none !important;
+		.middle {
+			top: 40%;
+		}
+	}
+}
+

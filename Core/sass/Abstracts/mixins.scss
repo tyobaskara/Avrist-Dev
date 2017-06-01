@@ -1,0 +1,61 @@
+@mixin breakpoint($value) {
+    @each $screen, $width in $media-query {
+        @if ($value == $screen) {
+            @media #{$width} {
+                @content;
+            } 
+        }
+    }
+}
+
+@mixin text-row($Line-height, $Rows) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $Rows; /* number of lines to show */
+    line-height: $Line-height;        /* fallback */
+    max-height: $Line-height*$Rows;
+} 
+
+// ANIMATED 
+@mixin animate($sec: false) {
+  @if $sec {
+    transition: all $sec ease;
+  } @else { 
+    transition: all .3s ease;
+  }
+}
+
+
+// -- Box Shadow -- //
+@mixin box-shadow($shadows) {
+  -moz-box-shadow: $shadows;
+  -webkit-box-shadow: $shadows;
+  box-shadow: $shadows;
+}
+
+// -- Border Radius -- //
+@mixin border-radius($radius) {
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+}
+ 
+// -- Elipsis -- //
+@mixin ellipsis($line) {
+    display: block;
+    display: -webkit-box;
+    -webkit-line-clamp: $line;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+// -- ANIMATION -- //
+@mixin transition($anim) {
+    -webkit-transition: $anim;
+    -moz-transition:    $anim;
+    -o-transition:      $anim;
+    transition:         $anim;
+}

@@ -1,0 +1,100 @@
+.avrist-slider-2 {
+	overflow: hidden;
+	.av-sl2-slider {
+		padding: 25px 0;
+		padding-bottom: 75px;
+		.av-sl2-box {
+			text-align: center;
+			width: 275px;
+			padding: 0 10px 10px;
+			border: 2px solid #f3f3f3;
+			margin-right: 20px;
+			@media screen and (max-width: 1023px){
+				width: 260px;
+				margin-right: 0px;
+			}
+			.image {
+				height: 65px;
+				margin-bottom: 25px;
+			}
+			.text {
+				margin-bottom: 20px;
+			}
+			img {
+				margin: auto;
+			}
+			> a {
+				position: relative;
+				padding: 20px;
+				padding-bottom: 50px;
+				display: block;
+				min-height: 255px;
+				border-bottom: 5px solid #ddd4e7;
+				.btn-violet {
+					position: absolute;
+					bottom: -5px;
+					left: 0;
+					right: 0;
+					background: $violet1;
+					line-height: 50px;
+					color: white;
+					font-family: 'DINPro-Bold';
+					opacity: 0;
+					transition: opacity .5s ease-in-out;
+					@include border-radius(0);
+					padding: 0;
+					@media screen and (max-width: 1023px){
+						opacity: 1;
+					}
+				}
+				&:hover {
+					.btn-violet {
+						opacity: 1;
+						transition: opacity .5s ease-in-out;
+					}
+				}
+			}
+		}
+		
+		.slick-dots {
+			bottom: 0;
+		}
+		.slick-dots li {
+		    width: 15px;
+    		height: 15px;
+    		margin: 0 10px;
+			button {
+			    width: 15px;
+	    		height: 15px;
+				&:before {
+				    width: 15px;
+		    		height: 15px;
+					color: #e0e0e0;
+					opacity: 1;
+					content: ' ';
+					background: #e0e0e0;
+					@include border-radius(50%);
+				}
+			}
+			&.slick-active {
+			    width: 50px;
+	    		height: 50px;
+				button {
+				    width: 50px;
+		    		height: 50px;
+					&:before {
+					    width: 50px;
+			    		height: 50px;
+						color: #e0e0e0;
+						opacity: 1;
+						content: ' ';
+						background: url('../images/arrow-violet-circle-right.png') no-repeat;
+						background-size: contain !important;
+						@include border-radius(50%);
+					}
+				}
+			}
+		} 
+
+	}
+}

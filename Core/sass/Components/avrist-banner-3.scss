@@ -1,0 +1,71 @@
+.avrist-banner-1-par.avrist-banner-1.banner-3 {
+	height: auto;
+	overflow: hidden;
+	.count {
+		height: auto;
+		.slick-arrow {
+			width: 50px;
+		    z-index: 25;
+		    height: 50px;
+		    top: 30%;
+		    @media screen and (max-width: 992px){
+		    	top: 50%;
+		    }
+			&.slick-prev {
+				left: 5%;
+			}
+			&.slick-next {
+				right: 5%;
+			}
+		}
+		.slick-track {
+			// @media screen and (min-width: 992px){
+			// 	height: 800px;
+			// }
+			.slick-slide {
+				> img {
+					width: 100%;
+				}
+				.banner-content {
+				    position: absolute;
+					@media screen and (min-width: 1024px) {
+					    top: 0;
+					    left: 0;
+					    right: 0;
+					    bottom: 0;
+					    .container {
+					    	&.middle {
+					    		position: absolute;
+							    left: 0;
+							    right: 0;
+							    top: 30%;
+							    transform: translateY(-50%);
+					    	}
+					    }
+					}
+					@media screen and (max-width: 1023px) {
+					    top: 25px;
+					    left: 15px;
+					    .container {
+					    	padding: 0;
+					    }
+					}
+				}
+			}
+			@media screen and (max-width: 992px){
+				img {
+					width: 100%;
+				}
+			}
+			// > div {
+			// 	background-position: center !important;
+			// 	background-size: contain !important;
+			// 	background-repeat: no-repeat !important;
+			// }
+		}
+	}
+}
+
+.banner-1-tabs-par.banner-3-tabs {
+	bottom: 100px;
+}

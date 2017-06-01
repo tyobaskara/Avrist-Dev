@@ -1,0 +1,92 @@
+.Avrist-slider-because-1 {
+	padding: 30px 0;
+	@media screen and (max-width: 1023px) {
+		padding: 10px 0;
+	}
+	.contPad {
+		position: relative;
+		padding-bottom: 75px;
+	}
+	.ul-par {
+		list-style-type: none;
+		font-size: 0;
+		margin: 0;
+		p {
+			margin: 0;
+		}
+		li {
+			font-size: initial;
+			display: inline-block;
+			vertical-align: middle;
+			@media screen and (min-width: 1024px){
+				&:first-child {
+					width: 25%;
+				}
+				&:last-child {
+					width: 75%;
+				}
+			}
+			@media screen and (max-width: 1024px){
+				width: 100%;
+			}
+
+		}
+	}
+	.slick-slide {
+		@media screen and (min-width: 1024px) {
+			height: 90px;
+			p {
+				position: relative;
+			    top: 50%;
+			    transform: translateY(-50%);
+			}
+		}
+	}
+	.slick-arrow {
+		z-index: 25;
+		transform: none;
+		top: auto;
+		bottom: -70px;
+		width: 50px;
+		height: 50px;
+		@media screen and (max-width: 1023px) {
+			width: 40px;
+			height: 40px;
+		}
+		&:hover {
+			cursor: pointer;
+		}
+		&.slick-prev {
+			left: auto;
+			right: 100px;
+			@media screen and (max-width: 1023px) {
+				right: 60px;
+			}
+			&:before {
+				content: ' ';
+				background: url('../images/arrow-violet-circle-right.png') no-repeat center;
+				background-size: contain;
+				position: absolute;
+			    top: 0;
+			    left: 0;
+			    right: 0;
+			    bottom: 0;
+			    transform: rotate(180deg);
+			}
+		}
+		&.slick-next {
+			left: auto;
+			right: 0;
+			&:before {
+				content: ' ';
+				background: url('../images/arrow-violet-circle-right.png') no-repeat center;
+				background-size: contain;
+				position: absolute;
+			    top: 0;
+			    left: 0;
+			    right: 0;
+			    bottom: 0;
+			}
+		}
+	}
+}

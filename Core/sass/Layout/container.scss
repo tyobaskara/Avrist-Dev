@@ -1,0 +1,88 @@
+img {
+	max-width: 100%;
+}
+a:hover, a:focus {
+	text-decoration: none;
+}
+.row {
+	margin: 0;
+}
+.margin-min-5 {
+    margin: 0px -5px;
+}
+.margin-min-15 {
+    margin: 0px -15px;
+}
+* {
+	font-family:'DINPro-Regular';
+}
+*:focus {
+	outline: none !important;
+}
+.inline-block { display: inline-block;}
+@media screen and (min-width: 992px){
+	.container {
+	    width: 95%;
+	    padding: 0;
+	}
+}
+@media screen and (min-width: 1200px) {
+	.container {
+	    width: 1200px;
+	}
+}
+@media screen and (max-width: 992px){
+	.container {
+	    width: 100%;
+	    padding: 10px 15px;
+	}
+}
+
+.datepicker {
+	th.datepicker-switch {
+		text-align: center;
+	}
+	td.day {
+		text-align: center;
+	}
+	td.active.day {
+		background: $violet1;
+		@include border-radius(50%);
+		color: white;
+	}
+}
+.lh-1-5 {
+	line-height: 1.5;
+}
+.contPad {
+	margin: 0 auto;
+    width: 90%;
+    @media screen and (max-width: 992px){
+		width: 100%;
+	}
+}
+
+.width-xs-75 {
+	@media screen and (max-width: 1023px) {
+		width: 75%;
+	}
+}
+
+.bg-line1 {
+	background: url('../images/tentang-section-bg.png') no-repeat;
+	background-size: contain;
+	background-position: center 80%;
+}
+
+#site-container {
+   padding-left: 0;
+   padding-right: 0; 
+}
+
+.jcf-select:hover, .jcf-reset-appearance:hover {
+	cursor: pointer;
+}
+
+.bold {
+	font-family: 'DINPro-Bold';
+}

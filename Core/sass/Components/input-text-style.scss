@@ -1,0 +1,51 @@
+.text-style-1 {
+	
+	input {
+		width: 100%;
+		border: none;
+		border-bottom: 2px solid $violet1;
+		height: 40px;
+		padding-left: 10px;
+		padding-bottom: 20px;
+	    font-size: 18px;
+	    color: $greyText3;
+		&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+		  color: $greyText3;
+		  font-size: 18px;
+		  font-style: italic;
+		}
+		&::-moz-placeholder { /* Firefox 19+ */
+		  color: $greyText3;
+		  font-size: 18px;
+		  font-style: italic;
+		}
+		&:-ms-input-placeholder { /* IE 10+ */
+		  color: $greyText3;
+		  font-size: 18px;
+		  font-style: italic;
+		}
+		&:-moz-placeholder { /* Firefox 18- */
+		  color: $greyText3;
+		  font-size: 18px;
+		  font-style: italic;
+		}
+	}
+	
+	&.button {
+		position: relative;
+		button {
+			position: absolute;
+			right: 10px;
+			top: 0;
+		}
+	}
+
+
+	&.border {
+    	border-bottom: 2px solid #542888;
+    	input {
+    		border-bottom: 0;
+    	}
+	}
+}
+

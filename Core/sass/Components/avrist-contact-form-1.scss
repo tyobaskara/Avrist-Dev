@@ -1,0 +1,63 @@
+.avrist-contact-form-1 {
+	form {
+		.time {
+			 > ul {
+			 	font-size: 0;
+			 	list-style-type: none;
+			 	li {
+			 		font-size: initial;
+			 		vertical-align: middle;
+			 		display: inline-block;
+			 		width: calc(100% / 3);
+			 		padding: 0 10px;
+					@media screen and (max-width: 1023px) {
+						width: 50%;
+						margin-top: 10px;
+					}
+			 	}
+			 }
+			label {
+				margin: 0;
+				margin-left: 10px;
+			}
+		}
+	}
+
+	.right {
+		> ul {
+			list-style-type: none;
+			margin: 0;
+		}
+		.submit {
+			text-align: right;
+			margin: 25px 0;
+			@media screen and (max-width: 1023px) {
+				margin-top: 50px;
+				text-align: left;
+			}
+			.btn-violet {
+				padding: 15px 60px;
+			}
+		}
+	}
+
+	@media screen and (max-width: 1023px) {
+		.col-md-6 {
+			padding: 0;
+		}
+		.left {
+			padding-top: 25px;
+		}
+		.left , .right {
+			padding-bottom: 25px;
+		}
+	}
+
+	.select-style-1 .jcf-select-text span {
+	    font-size: 18px;
+	    color: $greyText3;
+	}
+}
+
+
+

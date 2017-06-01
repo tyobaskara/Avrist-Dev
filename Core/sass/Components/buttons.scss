@@ -1,0 +1,115 @@
+a.btn,
+button.btn,
+input[type='button'].btn {
+    display: inline-block;
+    padding: 8px 25px;
+    margin: 0 5px;
+    font-size: 14px;
+    color: #333333;
+    background: #FFFFFF;
+    border: 1px darken(#FFFFFF, 8%) solid;
+    border-radius: 3px;
+    vertical-align: middle;
+
+    &.large {
+        font-size: 20px;
+        padding: 8px 40px;
+    }
+
+    &.small {
+        font-size: 12px;
+        padding: 5px 20px;
+    }
+
+    &:hover {
+        background: darken(#FFFFFF, 5%);
+    }
+
+    @each $class, $background, $font_color in $buttons {
+        &.#{$class} {
+            background: $background;
+            color: $font_color;
+            border-color: darken($background, 8%);
+
+            &:hover {
+                background: darken($background, 5%);
+            }
+        }
+    }
+}
+
+.btn-violet {
+    padding: 10px 50px;
+    background: $violet1;
+    display: inline-block;
+    border-radius: 50px;
+    color: rgba(255,255,255,0.8);
+    font-family: 'DINPro-Bold';
+    font-size: 12.53px;
+    transition: color .4s ease-in-out;
+    @media screen and (max-width: 1023px) {
+        &.visible-inbl {
+            display: inline-block !important;
+        }
+    }
+    &:hover {
+        transition: color .4s ease-in-out;
+        color: rgba(255,255,255,1);
+        cursor: pointer;
+    }
+}
+
+.btn-white-o {
+    padding: 10px 50px;
+    background: transparent;
+    display: inline-block;
+    border-radius: 50px;
+    border: 1px solid #fff;
+    color: rgba(255,255,255,0.8);
+    font-family: 'DINPro-Bold';
+    font-size: 12.53px;
+    transition: color .4s ease-in-out;
+    @media screen and (max-width: 1023px) {
+        &.visible-inbl {
+            display: inline-block !important;
+        }
+    }
+    &:hover {
+        transition: color .4s ease-in-out;
+        color: rgba(255,255,255,1);
+        cursor: pointer;
+    }
+}
+
+.shareButton {
+    width: 51px;
+    height: 51px;
+    background: url('../images/icon-share.png') no-repeat;
+    background-size: contain;
+    @media screen and (max-width: 1023px) {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.downloadButton {
+    width: 51px;
+    height: 51px;
+    background: url('../images/icon-download-violet.png') no-repeat;
+    background-size: contain;
+    @media screen and (max-width: 1023px) {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.shareButtonWhite {
+    width: 51px;
+    height: 51px;
+    background: url('../images/icon-share-white.png') no-repeat;
+    background-size: contain;
+    @media screen and (max-width: 1023px) {
+        width: 30px;
+        height: 30px;
+    }
+}

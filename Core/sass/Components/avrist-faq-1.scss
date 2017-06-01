@@ -1,0 +1,91 @@
+.avrist-faq-1 {
+	padding: 50px 0;
+	@media screen and (max-width: 1023px) {
+		padding: 20px 0;
+		.col-md-6:last-child {
+			.panel-group:last-child {
+				.panel-title a {
+					border: 0;
+				}
+			}
+		}
+	}
+	.panel-default {
+	    border: 0;
+	}
+	.panel-heading {
+		padding: 0;
+		background: none;
+		border: 0;
+	}
+	.panel-body {
+		p {
+			line-height: 1.5;
+		}
+	}
+	.panel-title {
+		a {
+			padding: 10px;
+			display: block;
+			border-bottom: 1px solid #d6d6d6;
+			padding-bottom: 20px;
+			position: relative;
+			&:after {
+				position: absolute;
+			    right: 0;
+			    top: 35%;
+			    transform: translateY(-50%);
+			    content: '+';
+			    line-height: 1;
+			    font-size: 36px;
+			}
+		}
+		&.opened {
+			a {
+				&:after {
+				    content: '-';
+				}
+			}
+		}
+	}
+
+	&.ali {
+		.panel-title {
+			a {
+				&:after {
+					color: $violet1;
+				}
+			}
+		}
+	}
+	&.agi {
+		.panel-title {
+			a {
+				&:after {
+					color: $grey1;
+				}
+			}
+		}
+	}
+	&.aam {
+		.panel-title {
+			a {
+				&:after {
+					color: $green1;
+				}
+			}
+		}
+	}
+
+	//mobile 
+	@media screen and (max-width: 1023px) {
+		.col-md-6 {
+			padding: 0;
+		}
+		.panel-title {
+			a {
+				padding-right: 50px;
+			}
+		}
+	}
+}

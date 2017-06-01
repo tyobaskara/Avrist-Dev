@@ -1,0 +1,27 @@
+@@include('../Shared/header.html', {
+        "style": [
+            "assets/css/Pages/homepage.css"
+        ]
+})
+
+@@include('../Widgets/avrist-banner-4.html')
+
+<div class="tab-content">
+  <div id="Jiwa" class="tab-pane fade in active">
+  	
+	@@include('../Widgets/avrist-thumbnail-1.html')
+
+	@@include('../Widgets/compare-product.html')
+
+  </div>
+  <div id="solIndividu" class="tab-pane fade">
+    <h3>Menu 1</h3>
+    <p>Some content in menu 1.</p>
+  </div>
+</div>
+
+@@include('../Shared/footer.html', {
+        "script": [
+            "assets/js/Includes/homepage.js"
+        ]
+})

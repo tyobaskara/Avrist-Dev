@@ -1,0 +1,314 @@
+.greyTheme {
+	.avrist-slider-2 .av-sl2-slider .av-sl2-box>a .btn-violet {
+	    background: $grey1;
+	}
+	.avrist-slider-2 {
+		.color-ali {
+			color: $grey1 !important;
+		}
+	}
+	.avrist-slider-2 .av-sl2-slider .slick-dots li.slick-active button:before {
+	    background: url(../images/arrow-grey-circle-right.png) no-repeat;
+	}
+
+	.avrist-tab-1, .avrist-data-nav, .avrist-thumbnail-grey-1, .banner-3-slider, .Avrist-banner-thumbnail-1, .avrist-thumbnail-white-1, .avrist-thumbnail-white-2 , .avrist-faq-1, .avrist-banner-1-par, .banner-5-tab, .avrist-faq-2, .avrist-thumbnail-1 {
+		.color-ali {
+			color: $grey1 !important;
+		}
+	}
+
+	.banner-2-tabs>li.active .picture {
+	    border-color: $grey1;
+	}
+
+	.Avrist-banner-thumbnail-1.Avrist-slider-3 .abt-2-slider .slick-arrow.slick-next:before {
+	    background: url(../images/arrow-grey-circle-right.png) no-repeat center;
+	    background-size: contain !important;
+	}
+	.Avrist-banner-thumbnail-1.Avrist-slider-3 .abt-2-slider .slick-arrow.slick-prev:before {
+	    background: url(../images/arrow-grey-circle-right.png) no-repeat center;
+	    background-size: contain !important;
+	}
+
+	.btn-violet {
+		background: $grey1 !important;
+	}
+
+	.banner-1-tabs li.active a {
+	    color: $grey1;
+	}
+	.banner-1-tabs li.active a:after {
+	    background: $grey1;
+	}
+
+	.avrist-faq-1.ali .panel-title a:after {
+	    color: $grey1;
+	}
+
+	.select-tab .jcf-select {
+	    border-bottom: 2px solid $grey1;
+	}
+	.select-tab .jcf-select-text span {
+	    color: $grey1;
+	}
+	.select-tab .jcf-select-opener:after {
+	    color: $grey1;
+	}
+
+	@media screen and (max-width: 1023px) {
+		.avrist-faq-2 .left .big-circle .circle-link ul li a {
+		    color: $grey1;
+		}
+		.big-circle .circle-link ul li a:after, .big-circle .circle-link ul li p:after {
+		    color: $grey1;
+		}
+		.big-circle .circle-link ul li a, .big-circle .circle-link ul li p {
+		    border-bottom: 2px dashed $grey1;
+		}
+	}
+
+	.avrist-header-1 .informasi-header {
+	    background: $grey1;
+	}
+
+	.header-search {
+
+		.header-search-style {
+			border-bottom: 2px solid $grey1;
+			@media screen and (max-width: 1023px) {
+				&:after {
+					background: $grey1;
+				}
+			}
+			input {
+				@media screen and (max-width: 1023px) {
+					&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+					  color: $grey1;
+					}
+					&::-moz-placeholder { /* Firefox 19+ */
+					  color: $grey1;
+					}
+					&:-ms-input-placeholder { /* IE 10+ */
+					  color: $grey1;
+					}
+					&:-moz-placeholder { /* Firefox 18- */
+					  color: $grey1;
+					}
+				}
+			}
+			.color-ali {
+				color: $grey1 !important;
+			}
+		}
+		
+	}
+
+	.avrist-header-1 .mobile-header-2 {
+		> ul {
+		    background: $grey1;
+		}
+	}
+
+	.avrist-header-1 .mobile-header-2>ul li a.dropdown-toggle:after {
+    	border: 1px solid #fff;
+    }
+
+    .avrist-data-nav .text-style-1 {
+    	input {
+	    	border-color: $grey1;
+	    }
+	    button i {
+	    	color: $grey1 !important;
+	    }
+	    &.border {
+	    	border-color: $grey1;
+	    }
+	}
+
+	.avrist-header-1 .ul-par>li.mid .dropdown-menu .dropdown-1 h4 {
+	    color: $grey1;
+	}
+
+}
+
+.greyBody {
+	.datepicker {
+		td.active.day {
+			background: $grey1;
+		}
+	}
+}
+
+.greenTheme {
+	.avrist-slider-2 .av-sl2-slider .av-sl2-box>a .btn-violet {
+	    background: $green1;
+	}
+	.avrist-slider-2 {
+		.color-ali {
+			color: $green1 !important;
+		}
+	}
+	.avrist-slider-2 .av-sl2-slider .slick-dots li.slick-active button:before {
+	    background: url(../images/arrow-green-circle-right.png) no-repeat;
+	}
+
+	.avrist-tab-1, .avrist-data-nav, .avrist-thumbnail-grey-1, .banner-3-slider, .Avrist-banner-thumbnail-1, .avrist-thumbnail-white-1, .avrist-thumbnail-white-2 , .avrist-faq-1, .avrist-banner-1-par, .banner-5-tab, .avrist-faq-2, .avrist-thumbnail-1 {
+		.color-ali {
+			color: $green1 !important;
+		}
+	}
+
+	.banner-2-tabs>li.active .picture {
+	    border-color: $green1;
+	}
+
+	.Avrist-banner-thumbnail-1.Avrist-slider-3 .abt-2-slider .slick-arrow.slick-next:before {
+	    background: url(../images/arrow-green-circle-right.png) no-repeat center;
+	    background-size: contain !important;
+	}
+	.Avrist-banner-thumbnail-1.Avrist-slider-3 .abt-2-slider .slick-arrow.slick-prev:before {
+	    background: url(../images/arrow-green-circle-right.png) no-repeat center;
+	    background-size: contain !important;
+	}
+
+	.btn-violet {
+		background: $green1 !important;
+	}
+
+	.banner-1-tabs li.active a {
+	    color: $green1;
+	}
+	.banner-1-tabs li.active a:after {
+	    background: $green1;
+	}
+
+	.avrist-faq-1.ali .panel-title a:after {
+	    color: $green1;
+	}
+
+	.shareButton {
+	    width: 51px;
+	    height: 51px;
+	    background: url('../images/icon-share-green.png') no-repeat;
+	    background-size: contain;
+	    @media screen and (max-width: 1023px) {
+	        width: 30px;
+	        height: 30px;
+	    }
+	}
+
+	.downloadButton {
+	    width: 51px;
+	    height: 51px;
+	    background: url('../images/icon-download-green.png') no-repeat;
+	    background-size: contain;
+	    @media screen and (max-width: 1023px) {
+	        width: 30px;
+	        height: 30px;
+	    }
+	}
+
+	.shareButtonWhite {
+	    width: 51px;
+	    height: 51px;
+	    background: url('../images/icon-share-white-green.png') no-repeat;
+	    background-size: contain;
+	    @media screen and (max-width: 1023px) {
+	        width: 30px;
+	        height: 30px;
+	    }
+	}
+
+	.select-tab .jcf-select {
+	    border-bottom: 2px solid $green1;
+	}
+	.select-tab .jcf-select-text span {
+	    color: $green1;
+	}
+	.select-tab .jcf-select-opener:after {
+	    color: $green1;
+	}
+
+	@media screen and (max-width: 1023px) {
+		.avrist-faq-2 .left .big-circle .circle-link ul li a {
+		    color: $green1;
+		}
+		.big-circle .circle-link ul li a:after, .big-circle .circle-link ul li p:after {
+		    color: $green1;
+		}
+		.big-circle .circle-link ul li a, .big-circle .circle-link ul li p {
+		    border-bottom: 2px dashed $green1;
+		}
+	}
+
+	.avrist-header-1 .informasi-header {
+	    background: $green1;
+	}
+
+	.header-search {
+
+		.header-search-style {
+			border-bottom: 2px solid $green1;
+			@media screen and (max-width: 1023px) {
+				&:after {
+					background: $green1;
+				}
+			}
+			input {
+				@media screen and (max-width: 1023px) {
+					&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+					  color: $green1;
+					}
+					&::-moz-placeholder { /* Firefox 19+ */
+					  color: $green1;
+					}
+					&:-ms-input-placeholder { /* IE 10+ */
+					  color: $green1;
+					}
+					&:-moz-placeholder { /* Firefox 18- */
+					  color: $green1;
+					}
+				}
+			}
+			.color-ali {
+				color: $green1 !important;
+			}
+		}
+
+	}
+
+	.avrist-header-1 .mobile-header-2 {
+		> ul {
+		    background: $green1;
+		}
+	}
+
+	.avrist-header-1 .mobile-header-2>ul li a.dropdown-toggle:after {
+    	border: 1px solid #fff;
+    }
+
+    .avrist-data-nav .text-style-1 {
+    	input {
+	    	border-color: $green1;
+	    }
+	    button i {
+	    	color: $green1 !important;
+	    }
+	    &.border {
+	    	border-color: $green1;
+	    }
+	}
+
+	.avrist-header-1 .ul-par>li.mid .dropdown-menu .dropdown-1 h4 {
+	    color: $green1;
+	}
+
+}
+
+.greenBody {
+	.datepicker {
+		td.active.day {
+			background: $green1;
+		}
+	}
+}

@@ -1,0 +1,19 @@
+.avrist-thumbnail-1.avrist-thumbnail-2 {
+	@media screen and (max-width: 1023px){
+		.bobotom {
+			border-bottom: 1px solid #d1d1d1;
+			padding: 20px 0;
+			&:last-child {
+				border-bottom: 0;
+			}
+		}
+	}
+
+	.description {
+		min-height: 250px;
+		@media screen and (max-width: 1023px){
+			min-height: auto;
+		}
+	}
+
+}

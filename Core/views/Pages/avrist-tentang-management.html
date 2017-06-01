@@ -1,0 +1,33 @@
+@@include('../Shared/header.html', {
+        "style": [
+            "assets/css/Pages/homepage.css"
+        ]
+})
+
+<div class="hidden" id="header-2-show"></div>
+
+@@include('../Widgets/avrist-banner-1.html')
+
+<div class="tab-content">
+  <div id="life" class="tab-pane fade in active">
+    @@include('../Widgets/avrist-tab-1.html')
+    @@include('../Widgets/avrist-tab-1.html')
+    @@include('../Widgets/avrist-thumbnail-white-1.html')
+  </div>
+  <div id="general" class="tab-pane fade">
+    @@include('../Widgets/avrist-tab-1.html')
+    @@include('../Widgets/avrist-tab-1.html')
+    @@include('../Widgets/avrist-thumbnail-white-1.html')
+  </div>
+  <div id="assets" class="tab-pane fade">
+    @@include('../Widgets/avrist-tab-1.html')
+    @@include('../Widgets/avrist-tab-1.html')
+    @@include('../Widgets/avrist-thumbnail-white-1.html')
+  </div>
+</div>
+
+@@include('../Shared/footer.html', {
+        "script": [
+            "assets/js/Includes/homepage.js"
+        ]
+})

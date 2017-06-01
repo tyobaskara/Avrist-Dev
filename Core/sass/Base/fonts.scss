@@ -1,0 +1,39 @@
+
+
+@each $name, $file in $font_family {
+    @if $font_idx==1 {
+        $font_default: $name;
+        $font_idx: 2;
+    }
+
+    @font-face {
+        font-family: $name;
+        src: url('#{$file}.eot');
+        src:
+            url('#{$file}.eot') format('embedded-opentype'),
+            //url('#{$file}.woff2') format('woff2'),
+            url('#{$file}.woff') format('woff'), 
+            url('#{$file}.ttf') format('truetype'),
+            url('#{$file}.svg#FuturaStdLight') format('svg');
+    }
+} 
+
+$fonts: DINPro-Black DINPro-Bold DINPro-Light DINPro-Medium DINPro-Regular;
+
+@each $font in $fonts {
+       .#{$font} {
+              font-family: #{$font} !important;
+       }
+}
+
+/* font DESKTOP */
+@for $i from 0 through 80 {
+  .font-#{2 * $i} { font-size: 2px * $i !important; }
+}
+/* font MOBILE */
+@media screen and (max-width: 768px){
+    /* font xs size */
+    @for $i from 0 through 100 {
+      .font-xs-#{1 * $i} { font-size: $i+px !important; }
+    }
+}

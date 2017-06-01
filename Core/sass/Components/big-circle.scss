@@ -1,0 +1,165 @@
+
+.big-circle {
+    display: inline-block;
+    width: 480px;
+	img {
+		width: 100%;
+	}
+
+	.circle-link {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+        padding: 80px 100px;
+		p, ul {
+			margin: 0;
+		}
+		hr {
+			width: 50px;
+			margin: 15px 0 5px;
+			border-bottom: 2px solid #fff;
+		}
+	    ul {
+	    	list-style-type: none;
+	    	li {
+	    		a, p {
+	    			display: block;
+	    			color: white;
+	    			border-bottom: 2px dashed $circleTitle1;
+	    			padding: 10px 0px;
+	    			position: relative;
+	    			&:after {
+	    				position: absolute;
+						right: 0;
+						top: 50%;
+						transform: translateY(-50%);
+						width: 25px;
+						height: 25px;
+						content: "\f054";
+					    font-family: FontAwesome;
+					    font-style: normal;
+					    font-weight: normal;
+					    text-decoration: inherit;
+					    text-align: center;
+					    font-size: 10px;
+					    line-height: 25px;
+					    color: $circleTitle1;
+	    			}
+	    		}
+	    		&:last-child {
+	    			a {
+	    				border: none;
+	    			}
+	    		}
+	    	}
+	    }
+	}
+
+	@media screen and (max-width: 1023px) {
+	    width: 100%;
+	    img {
+	    	width: 100%;
+	    }
+	    .circle-link {
+		    padding: 40px 100px;
+		}
+	}
+}
+
+
+.mobile-tab-circle {
+	.fade {
+		display: none !important;
+		opacity: 0;
+		transition: all .5s ease-in-out;
+	}
+	.fade.active {
+		display: block !important;
+		opacity: 1;
+		transition: all .5s ease-in-out;
+	}
+	> div {
+	    background: url(../images/mobile-line-bg.jpg) no-repeat bottom;
+	    background-size: contain;
+	    position: relative;
+	}
+	.circle-link {
+		padding: 0 15px;
+	    padding-bottom: 100px;
+	    margin-bottom: 10px;
+		p, ul {
+			margin: 0;
+		}
+		hr {
+			width: 50px;
+			margin: 15px 0 5px;
+			border-bottom: 2px solid #e0e0e0;
+		}
+	    ul {
+	    	list-style-type: none;
+	    	li {
+	    		a, p {
+	    			display: block;
+	    			color: white;
+	    			border-bottom: 2px dashed #e0e0e0;
+	    			padding: 10px 0px;
+	    			position: relative;
+	    			&:after {
+	    				position: absolute;
+						right: 0;
+						top: 50%;
+						transform: translateY(-50%);
+						width: 25px;
+						height: 25px;
+						content: "\f054";
+					    font-family: FontAwesome;
+					    font-style: normal;
+					    font-weight: normal;
+					    text-decoration: inherit;
+					    text-align: center;
+					    font-size: 10px;
+					    line-height: 25px;
+					    color: $circleTitle1;
+	    			}
+	    		}
+	    		&:last-child {
+	    			a {
+	    				border: none;
+	    			}
+	    		}
+	    	}
+	    }
+	}
+
+	.scroll-down {
+		display: block;
+		position: absolute;
+		bottom: 50px;
+		left: 0;
+		right: 0;
+		-webkit-animation: scrollUpDown 5s infinite; /* Safari 4.0 - 8.0 */
+    	animation: scrollUpDown 5s infinite;
+		img {
+			display: block;
+			margin: auto;
+			width: 125px;
+		}
+	}
+
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes scrollUpDown {
+    0%   {bottom: 50px;}
+    50%  {bottom: 35px;}
+    100% {bottom: 50px;}
+}
+
+/* Standard syntax */
+@keyframes scrollUpDown {
+    0%   {bottom: 50px;}
+    50%  {bottom: 35px;}
+    100% {bottom: 50px;}
+}

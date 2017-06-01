@@ -1,0 +1,134 @@
+.avrist-data-nav {
+	.list-par {	
+		list-style-type: none;
+		overflow: hidden;
+		li {
+			float: left;
+			&:first-child {
+				width: 35%;
+			}
+			&:last-child {
+				width: 65%;
+			}
+			@media screen and (max-width: 1023px) {
+				&:first-child {
+					width: 100%;
+				}
+				&:last-child {
+					width: 100%;
+				}
+				&.left {
+					text-align: left;
+				}
+				margin: 15px 0;
+			}
+		}
+	}
+	.datepick-Box {
+		display: block;
+		width: calc(100% - 30px);
+		margin: auto;
+		background: $green1;
+		height: 45px;
+		color: white;
+		padding: 0 25px;
+		position: relative;
+		@include border-radius(20px);
+		@media screen and (max-width: 1023px) {
+			display: inline-block;
+			padding: 0 15px;
+		}
+		span {
+			line-height: 45px;
+		}
+		input {
+	    	width: calc(100% - 92px);
+	    	cursor: pointer;
+
+			&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+				color: white;
+			}
+			&::-moz-placeholder { /* Firefox 19+ */
+				color: white;
+			}
+			&:-ms-input-placeholder { /* IE 10+ */
+				color: white;
+			}
+			&:-moz-placeholder { /* Firefox 18- */
+				color: white;
+			}
+		}
+		img {
+			position: absolute;
+			right: 25px;
+			top: 50%;
+			transform: translateY(-50%);
+			pointer-events: none;
+		}
+	}
+
+	.text-style-1 {
+		font-size: 0;
+		input {
+		    padding-left: 0;
+		    border-bottom: 0;
+		}
+		p {
+			display: inline-block;
+			margin-bottom: 0;
+		}
+		input {
+			width: calc(100% - 155px);
+			display: inline-block;
+			padding-left: 10px;
+			padding-right: 25px;
+			@media screen and (max-width: 1023px) {
+				width: calc(100% - 120px);
+			}
+		}
+		button {
+			font-size: initial;
+		}
+	}
+	
+	.data-par {
+		padding: 20px 0;
+	}
+	.data-box  {
+		margin: 0 -15px;
+		padding: 25px 0;
+		border-bottom: 1px solid #e4e4e4;
+		.prev, .current, .status, .invest {
+			text-align: center;
+			@media screen and (max-width: 1023px) {
+				text-align: left;
+			}
+		}
+		@media screen and (max-width: 1023px) {
+			margin: 0;
+			.col-md-3 , .col-md-2 {
+				padding: 0;
+				margin-bottom: 15px;
+			}
+		}
+		p {
+			margin: 0;
+		}
+		&:first-child {
+			border-bottom: 0;
+		}
+		&:last-child {
+			border-bottom: 0;
+		}
+		.status {
+			p {
+				line-height: 34px;
+			}
+			img {
+			    vertical-align: middle;
+			    margin-right: 10px;
+		        display: inline-block;
+			}
+		}
+	}
+}

@@ -1,0 +1,36 @@
+.tick-violet {
+
+	.jcf-radio {
+		margin: 0 5px;
+		width: 30px;
+		height: 30px;
+		border: 1px solid #dadada;
+		@include border-radius(50%);
+		@media screen and (max-width: 1023px) {
+			width: 20px;
+			height: 20px;
+		}
+		span {
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+		}
+		&.jcf-focus {
+			border: 1px solid #dadada !important;
+		}
+	}
+
+	.jcf-radio.jcf-unchecked {
+		background: none;
+		background-size: contain;
+	}
+	.jcf-radio.jcf-checked {
+		border: 1px solid transparent;
+		span {
+			background: url('../images/icon-centang-violet.png') no-repeat;
+			background-size: contain;
+		}
+	}
+
+}

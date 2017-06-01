@@ -1,0 +1,77 @@
+.avrist-years-1 {
+	.ay1-slider {
+		transform: rotate(180deg);
+		
+		.ay1-par {
+			margin: 20px;
+			@media screen and (max-width: 1023px) {
+				margin: 10px;
+			}
+		}
+		.slick-list {
+			padding-left: calc(50% - 71px);
+			@media screen and (max-width: 1023px) {
+				padding-left: calc(50% - 66px);
+			}
+		}
+		.slick-slide {
+			transform: rotate(180deg);
+		}
+		.ay1-box {
+			position: relative;
+			padding: 35px;
+			p {
+				color: $greyText3;
+			}
+		}
+		.ay1-box {
+			position: relative;
+			&:before {
+			    content: ' ';
+			    height: 2px;
+			    width: 100px;
+			    border-bottom: 2px dashed $greyText3;
+			    position: absolute;
+			    left: -70px;
+			    top: 50%;
+			    transform: translateY(-50%);
+			    z-index: 5;
+			    @media screen and (max-width: 1023px) {
+			    	width: 80px;
+					left: -48px;
+			    }
+			}
+		}
+		.slick-current {
+			@include border-radius(50%);
+			border: 2px solid $violet1;
+			background: white;
+			p {
+				color: $violet1;
+			}
+			.ay1-box {
+				&:before {
+				    width: 68px;
+				    left: -70px;
+				    @media screen and (max-width: 1023px) {
+				    	width: 52px;
+    					left: -54px;
+				    }
+				}
+				&:after {
+					position: absolute;
+					height: 25px;
+					width: 2px;
+					content: ' ';
+					bottom: -25px;
+					left: 50%;
+					transform: translateX(-50%);
+					background: $violet1;
+				}
+			}
+		}
+		p {
+			margin: 0;
+		}
+	}
+}

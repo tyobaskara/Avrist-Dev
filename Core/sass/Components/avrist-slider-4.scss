@@ -1,0 +1,106 @@
+.Avrist-banner-thumbnail-1.avrist-slider-4 {
+	background: #f4f4f4;
+	padding: 20px 0;
+	.abt-2-par {
+		position: relative;
+
+		.pagination {
+		    display: inline-block;
+		    padding-left: 0;
+		    margin: 20px 0;
+		    border-radius: 4px;
+		    position: absolute;
+		    right: 100px;
+		    top: -120px;
+			ul {
+				list-style-type: none;
+				font-size: 0;
+				margin: 0;
+				li {
+					display: inline-block;
+					vertical-align: middle;
+					font-size: initial;
+					color: $greyText3;
+				}
+			}
+
+			@media screen and (max-width: 1023px) {
+			    top: auto;
+			    bottom: -18px;
+			    left: auto;
+			    right: 40px;
+			}
+		}
+	}
+	.abt-2-slider{
+		overflow: visible;
+		.abts-box {
+			position: relative;
+			> div {
+				min-height: 175px;
+				@media screen and (max-width: 1023px) {
+					min-height: 150px;
+					padding: 20px;
+				}
+			}
+			.img-botr {
+				position: absolute;
+				bottom: 20px;
+				right: 20px;
+				height: 50px;
+				@media screen and (max-width: 1023px) {
+					height: 40px;
+				}
+			}
+		}
+		
+		.slick-arrow{
+			&.slick-prev {
+			    left: auto;
+			    bottom: auto;
+			    -webkit-transform: none;
+			    -moz-transform: none;
+			    -ms-transform: none;
+			    -o-transform: none;
+			    transform: none;
+			    top: -100px;
+			    right: 150px;
+			    @media screen and (max-width: 1023px) {
+			    	top: auto;
+			    	bottom: 0;
+			    	right: 85px;
+			    }
+			}
+			&.slick-next {
+			    left: auto;
+			    bottom: auto;
+			    -webkit-transform: none;
+			    -moz-transform: none;
+			    -ms-transform: none;
+			    -o-transform: none;
+			    transform: none;
+			    top: -100px;
+			    right: 50px;
+			    @media screen and (max-width: 1023px) {
+			    	top: auto;
+			    	bottom: 0;
+			    	right: 0;
+			    }
+			}
+		}
+	}
+
+
+	//slider 4-2
+	&.avs4-2 {
+		.abt-2-slider .abts-box>div {
+		    min-height: 250px;
+		}
+		&.violet {
+			.link-arrow:after {    
+			    color: $violet1;
+			    border: 1px solid $violet1;
+			}
+		}
+	}
+}

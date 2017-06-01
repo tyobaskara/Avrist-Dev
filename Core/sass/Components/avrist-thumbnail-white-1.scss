@@ -1,0 +1,94 @@
+.avrist-thumbnail-white-1 {
+	padding: 50px 0;
+	@media screen and (max-width: 1023px){
+		padding: 20px 0 0;
+	}
+	.contPad {
+		> ul {
+			font-size: 0;
+			list-style-type: none;
+			> li {
+				display: inline-block;
+				vertical-align: top;
+				padding-bottom: 45px;
+				position: relative;
+				@media screen and (min-width: 1024px){
+					width: 350px;
+					min-height: 300px;
+				}
+				@media screen and (max-width: 1023px) {
+					margin-bottom: 25px;
+				}
+				.btn-violet {
+					position: absolute;
+					left: 0;
+					bottom: 0;
+					margin: auto;
+					width: 185px;
+					height: 40px;
+					padding: 0;
+					text-align: center;
+					line-height: 40px;
+					@media screen and (max-width: 1023px) {
+						width: 150px;
+						right: -15px;
+						left: auto;
+						@include border-radius(0);
+						text-align: left;
+						padding-left: 25px;
+						&:after {
+							position: absolute;
+							content: ' ';
+							right: 20px;
+							top: 50%;
+							transform: translateY(-50%);
+							width: 25px;
+							height: 25px;
+							background: url('../images/arrow-circle-right.png') no-repeat;
+							background-size: contain;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.avrist-thumbnail-grey-1 {
+	.row {
+		margin: 0 -15px;
+	}
+	.col-md-6 {
+		@media screen and (max-width: 1023px) {
+			padding: 0;
+			margin: 10px 0;
+		}
+	}
+	.box-grey {
+		background: $grey2;
+		padding: 50px;
+		position: relative;
+		padding-bottom: 45px;
+		@media screen and (min-width: 1024px){
+			min-height: 375px;
+		}
+		@media screen and (max-width: 1023px) {
+			padding: 20px;
+		}
+		.btn-violet {
+			position: absolute;
+			left: 50px;
+			bottom: 50px;
+			margin: auto;
+			width: 185px;
+			height: 40px;
+			padding: 0;
+			text-align: center;
+			line-height: 40px;
+			@media screen and (max-width: 1023px) {
+				position: initial;
+				margin-top: 20px;
+			}
+		}
+	}
+}

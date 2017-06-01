@@ -1,0 +1,24 @@
+.avrist-pick-office {
+	@media screen and (min-width: 1024px) {
+		.avrist-search-faq-1 form>ul li.left {
+		    width: 100px;
+		}
+		.avrist-search-faq-1 form>ul li.right {
+		    width: calc(100% - 100px);
+		}
+	}
+	.avrist-search-faq-1 .topic-box {
+		padding-bottom: 0px;
+	}
+	@media screen and (max-width: 1023px) {
+		.avrist-search-faq-1 .topics {
+			.col-md-4 {
+				padding: 10px 0;
+				border-bottom: 2px solid #e5e5e5;
+				&:last-child {
+					border-bottom: 0;
+				}
+			}
+		}
+	}
+}

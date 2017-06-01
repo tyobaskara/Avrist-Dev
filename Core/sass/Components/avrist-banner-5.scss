@@ -1,0 +1,64 @@
+.avrist-banner-1.avrist-banner-5 {
+	height: 500px;
+	background-position: top left !important;
+    @media screen and (max-width: 1200px) {
+    	background-position: -135px 0 !important;
+    }
+    @media screen and (max-width: 1023px) {
+    	height: auto;
+    }
+    .banner-title {
+	    position: absolute;
+	    left: auto;
+	    right: 0;
+	    top: 30%;
+	    bottom: 0;
+	    text-align: left;
+	    padding-top: 0;
+	    width: 40%;
+	    ul {
+	    	list-style-type: none;
+	    	margin: 0;
+	    }
+	    @media screen and (max-width: 1023px) {
+	    	left: 0;
+		    bottom: auto;
+		    right: 15px;
+		    width: 100%;
+		    top: 25px;
+		    padding: 0 15px;
+		    ul {
+		    	font-size: 0;
+		    	li {
+		    		display: inline-block;
+		    		font-size: initial;
+		    		vertical-align: middle;
+		    		width: 50%;
+		    	}
+		    }
+	    }
+	    img {
+	    	width: auto;
+	    }
+	}
+
+	@media screen and (max-width: 1023px) {
+		.right-btn {
+			text-align: right;
+			a {
+				display: inline-block;
+				vertical-align: middle;
+				margin: 0 5px !important;
+				img {
+					width: 30px;
+					height: 30px;
+				}
+			}
+		}
+	}
+}
+.banner-5-tab {
+	p {
+		line-height: 1.5;
+	}
+}

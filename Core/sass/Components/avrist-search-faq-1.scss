@@ -1,0 +1,138 @@
+.avrist-search-faq-1 {
+	form {
+		> ul {
+			font-size: 0;
+			list-style-type: none;
+			margin: 0;
+			padding: 25px 0;
+			border-bottom: 2px solid $violet1;
+			li {
+				display: inline-block;
+				vertical-align: middle;
+				font-size: initial;
+				&.left {
+					width: 230px;
+				}
+				&.right {
+					width: calc(100% - 230px);
+				}
+				@media screen and (max-width: 1023px) {
+					&.left {
+						width: 100%;
+						margin-bottom: 10px;
+					}
+					&.right {
+						width: 100%;
+					}
+				}
+			}
+		}
+		p {
+			margin: 0;
+		}
+		.faq-search {
+			position: relative;
+			input {
+				width: 100%;
+				font-family: 'DINPro-Medium';
+				font-size: 24px;
+				color: $violet1;
+				&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+				  color: $violet1;
+				}
+				&::-moz-placeholder { /* Firefox 19+ */
+				  color: $violet1;
+				}
+				&:-ms-input-placeholder { /* IE 10+ */
+				  color: $violet1;
+				}
+				&:-moz-placeholder { /* Firefox 18- */
+				  color: $violet1;
+				}
+				@media screen and (max-width: 1023px) {
+					font-size: 18px;
+				}
+			}
+			button {
+				position: absolute;
+				right: 0;
+				top: 50%;
+				transform: translateY(-50%);
+				@media screen and (max-width: 1023px) {
+					right: 5px;
+				}
+			}
+		}
+	}
+
+	.topics {
+		margin: 40px 0;
+		@media screen and (max-width: 1023px) {
+			margin: 20px 0 0;
+		}
+		.row {
+			@media screen and (min-width: 1024px) {
+				margin: 0 -15px;
+			}
+		}
+		.topic-box {
+			@media screen and (min-width: 1024px) {
+				min-height: 200px;
+			}
+			position: relative;
+			padding-bottom: 50px;
+			.image {
+				min-height: 75px;
+				@media screen and (max-width: 1023px) {
+					width: 50px;
+				}
+			}
+			.link-borbot-grey {
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				right: 0;
+			}
+		}
+		.col-md-4 {
+			padding-top: 25px;
+			padding-bottom: 25px;
+			@media screen and (max-width: 1023px) {
+				padding: 25px 0;
+			}
+		}
+	}
+}
+
+.link-borbot-grey {
+	display: block;
+	border-bottom: 3px solid #e2e5ea;
+	line-height: 50px;
+	position: relative;
+	&:after {
+		position: absolute;
+		right: 10px;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 25px;
+		height: 25px;
+	    content: "\f054";
+	    font-family: FontAwesome;
+	    font-style: normal;
+	    font-weight: normal;
+	    text-decoration: inherit;
+	    text-align: center;
+	    font-size: 12px;
+	    line-height: 25px;
+	    color: $greyText3;
+	    @include border-radius(50%);
+	    border: 1px solid $greyText3;
+	    opacity: 0.75;
+	    transition: opacity .2s ease-in-out;
+	}
+	&:hover {
+		&:after {
+	    	opacity: 1;
+		}
+	}
+}

@@ -1,0 +1,106 @@
+.avrist-faq-2 {
+	padding: 25px 0;
+	@media screen and (max-width: 1023px) {
+		padding: 0;
+	}
+	.big-circle .circle-link {
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    right: 0;
+	    bottom: 0;
+	    padding: 80px 120px;
+	}
+
+	.left {
+		//background: url('../images/circle-faq-2-bg.png') top right no-repeat;
+		background-repeat: no-repeat !important;
+		background-position: top right !important;
+		@media screen and (max-width: 1024px) {
+			.big-circle {
+				.circle-link {
+		    		padding: 40px 100px;
+				}
+			}
+		}
+		@media screen and (max-width: 1023px) {
+			background: none !important;
+			margin-bottom: 50px;
+			padding: 0;
+			.big-circle {
+				width: 100%;
+				.circle-link {
+					position: relative;
+					padding: 0;
+					ul {
+						li {
+							a {
+								color: $violet1;
+							}
+						}
+					}
+					.color-a4-xs {
+						color: #a4a4a4 !important;
+					}
+					.color-grey-xs {
+						color: $greyText3 !important;
+					}
+					hr {
+					    border-bottom: 2px solid #d1d1d1;
+					}
+				}
+			}
+		}
+	}
+	.right {
+		padding: 20px 30px;
+		padding-top: 80px;
+		@media screen and (max-width: 1023px) {
+			padding: 0;
+		}
+		.form {
+			padding: 10px;
+			margin: 20px 0;
+			input[type="text"], input[type="email"] {
+				display: block;
+				height: 40px;
+				width: 100%;
+			  	color: $greyText;
+			  	font-size: 18px;
+				@media screen and (max-width: 1023px) {
+					height: 30px;
+				}
+				&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+				  color: $greyText;
+				  font-style: italic;
+				  font-size: 18px;
+				}
+				&::-moz-placeholder { /* Firefox 19+ */
+				  color: $greyText;
+				  font-style: italic;
+				  font-size: 18px;
+				}
+				&:-ms-input-placeholder { /* IE 10+ */
+				  color: $greyText;
+				  font-style: italic;
+				  font-size: 18px;
+				}
+				&:-moz-placeholder { /* Firefox 18- */
+				  color: $greyText;
+				  font-style: italic;
+				  font-size: 18px;
+				}
+			}
+			border-bottom: 1px solid $violet1;
+		}
+		.btn-violet {
+			padding: 15px 50px;
+		}
+	}
+	.submit {
+		text-align: right;
+		@media screen and (max-width: 1023px) {
+			text-align: left;
+		}
+	}
+}
