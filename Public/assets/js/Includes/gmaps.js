@@ -5,10 +5,7 @@ var cityList = {
             "longitude": 106.7676787,
             "category_name": "RS. ROYAL PROGRESS INTERNATIONAL",
             "category_code": "Avrist",
-            "type_name": "ATM",
-            "type_code": "ATM",
             "region_name": "DKI Jakarta",
-            "title": "TAMAN RATU",
             "address": "JL. Danau Sunter Utara, Sunter Paradise",
             "image": "https:\/\/www.btpn.com\/website\/static\/img\/orange-pin.png",
             "phone": "021-6459877 ; 6400261",
@@ -18,10 +15,7 @@ var cityList = {
             "longitude": 106.826826,
             "category_name": "RSIA. HERMINA PODOMORO6",
             "category_code": "Avrist",
-            "type_name": "ATM",
-            "type_code": "ATM",
             "region_name": "DKI Jakarta",
-            "title": "PECENONGAN                                   ",
             "address": "JL. Danau Sunter Utara, Sunter Paradise",
             "image": "https:\/\/www.btpn.com\/website\/static\/img\/orange-pin.png",
             "phone": "021-6459877 ; 6400261",
@@ -31,10 +25,7 @@ var cityList = {
             "longitude": 106.8166858,
             "category_name": "RS GADING PLUIT",
             "category_code": "Avrist",
-            "type_name": "ATM",
-            "type_code": "ATM",
             "region_name": "DKI Jakarta",
-            "title": "GLODOK",
             "address": "JL. Danau Sunter Utara, Sunter Paradise",
             "image": "https:\/\/www.btpn.com\/website\/static\/img\/orange-pin.png",
             "phone": "021-6459877 ; 6400261",
@@ -44,10 +35,7 @@ var cityList = {
             "longitude": 106.810696,
             "category_name": "RS. ATMA JAYA",
             "category_code": "Avrist",
-            "type_name": "ATM",
-            "type_code": "ATM",
             "region_name": "DKI Jakarta",
-            "title": "WOLTER MONGINSIDI",
             "address": "JL. Danau Sunter Utara, Sunter Paradise",
             "image": "https:\/\/www.btpn.com\/website\/static\/img\/orange-pin.png",
             "phone": "021-6459877 ; 6400261",
@@ -57,10 +45,7 @@ var cityList = {
             "longitude": 106.849261,
             "category_name": "RS. ROYAL PROGRESS INTERNATIONAL2",
             "category_code": "Avrist",
-            "type_name": "ATM",
-            "type_code": "ATM",
             "region_name": "DKI Jakarta",
-            "title": "TEBET",
             "address": "JL. Danau Sunter Utara, Sunter Paradise",
             "image": "https:\/\/www.btpn.com\/website\/static\/img\/orange-pin.png",
             "phone": "021-6459877 ; 6400261",
@@ -70,10 +55,7 @@ var cityList = {
             "longitude": 106.7832011,
             "category_name": "RS. ATMA JAYA2",
             "category_code": "Avrist",
-            "type_name": "ATM",
-            "type_code": "ATM",
             "region_name": "DKI Jakarta",
-            "title": "ITC PERMATA HIJAU",
             "address": "JL. Danau Sunter Utara, Sunter Paradise",
             "image": "https:\/\/www.btpn.com\/website\/static\/img\/orange-pin.png",
             "phone": "021-6459877 ; 6400261",
@@ -83,10 +65,7 @@ var cityList = {
             "longitude": 106.8863427,
             "category_name": "RS GADING PLUIT2",
             "category_code": "Avrist",
-            "type_name": "ATM",
-            "type_code": "ATM",
             "region_name": "DKI Jakarta",
-            "title": "RAWAMANGUN",
             "address": "JL. Danau Sunter Utara, Sunter Paradise",
             "image": "https:\/\/www.btpn.com\/website\/static\/img\/orange-pin.png",
             "phone": "021-6459877 ; 6400261",
@@ -96,10 +75,7 @@ var cityList = {
             "longitude": 106.8205089,
             "category_name": "RSIA. HERMINA PODOMORO2",
             "category_code": "Avrist",
-            "type_name": "ATM",
-            "type_code": "ATM",
             "region_name": "DKI Jakarta",
-            "title": "WISMA BNI 46",
             "address": "JL. Danau Sunter Utara, Sunter Paradise",
             "image": "https:\/\/www.btpn.com\/website\/static\/img\/orange-pin.png",
             "phone": "021-6459877 ; 6400261",
@@ -109,10 +85,7 @@ var cityList = {
             "longitude": 106.9936029,
             "category_name": "RSIA. HERMINA PODOMORO3",
             "category_code": "Avrist",
-            "type_name": "ATM",
-            "type_code": "ATM",
             "region_name": "DKI Jakarta",
-            "title": "AHMAD YANI",
             "address": "JL. Danau Sunter Utara, Sunter Paradise",
             "image": "https:\/\/www.btpn.com\/website\/static\/img\/orange-pin.png",
             "phone": "021-6459877 ; 6400261",
@@ -123,10 +96,7 @@ var cityList = {
             "longitude": 106.8323349,
             "category_name": "RSIA. HERMINA PODOMORO5",
             "category_code": "Admedika",
-            "type_name": "Kantor Cabang",
-            "type_code": "KC",
             "region_name": "DKI Jakarta",
-            "title": "MASS ACQUISITION",
             "address": "JL. Danau Sunter Utara, Sunter Paradise",
             "image": "https:\/\/www.btpn.com\/website\/static\/img\/orange-pin.png",
             "phone": "021-6459877 ; 6400261",
@@ -136,10 +106,7 @@ var cityList = {
             "longitude": 106.8000409,
             "category_name": "RSIA. HERMINA PODOMORO",
             "category_code": "admedika",
-            "type_name": "ATM",
-            "type_code": "ATM",
             "region_name": "DKI Jakarta",
-            "title": "TOMANG",
             "address": "JL. Danau Sunter Utara, Sunter Paradise",
             "image": "https:\/\/www.btpn.com\/website\/static\/img\/orange-pin.png",
             "phone": "021-6459877 ; 6400261",
@@ -149,10 +116,7 @@ var cityList = {
             "longitude": 106.6768289,
             "category_name": "RSIA. HERMINA PODOMORO7",
             "category_code": "admedika",
-            "type_name": "ATM",
-            "type_code": "ATM",
             "region_name": "DKI Jakarta",
-            "title": "KEBON JERUK                                  ",
             "address": "JL. Danau Sunter Utara, Sunter Paradise",
             "image": "https:\/\/www.btpn.com\/website\/static\/img\/orange-pin.png",
             "phone": "021-6459877 ; 6400261",
@@ -162,10 +126,7 @@ var cityList = {
             "longitude": 106.8300677,
             "category_name": "RSIA. HERMINA PODOMORO8",
             "category_code": "admedika",
-            "type_name": "ATM",
-            "type_code": "ATM",
             "region_name": "DKI Jakarta",
-            "title": "PANTAI INDAH KAPUK",
             "address": "JL. Danau Sunter Utara, Sunter Paradise",
             "image": "https:\/\/www.btpn.com\/website\/static\/img\/orange-pin.png",
             "phone": "021-6459877 ; 6400261",
@@ -175,10 +136,7 @@ var cityList = {
             "longitude": 106.7886325209,
             "category_name": "RSIA. HERMINA PODOMORO9",
             "category_code": "admedika",
-            "type_name": "ATM",
-            "type_code": "ATM",
             "region_name": "DKI Jakarta",
-            "title": "CENTRAL PARK",
             "address": "JL. Danau Sunter Utara, Sunter Paradise",
             "image": "https:\/\/www.btpn.com\/website\/static\/img\/orange-pin.png",
             "phone": "021-6459877 ; 6400261",
@@ -199,7 +157,6 @@ String.prototype.myFormat = function() {
 };
 
 var markerBauble = '<div class="marker-desc"><h4 class="firstHeading">{0}</h4></div>';
-
 //INFO WINDOW//
 
 
@@ -222,21 +179,28 @@ function codeAddress(address) {
         'address': address
     }, function(results, status) {
         if (status == google.maps.GeocoderStatus.OK) {
+
+            //change geolocation with geometry location
             currentLocation = results[0].geometry.location;
 
+            //MAP OPTIONS
             var myOptions = {
                 zoom: zoom,
                 center: currentLocation,
                 mapTypeId: google.maps.MapTypeId.ROADMAP,
                 scrollwheel: false
             }
+
+            //REINIT MAP
             map = new google.maps.Map(document.getElementById("map-canvas"), myOptions);
 
+            //ADD MARKER
             var marker = new google.maps.Marker({
                 map: map,
                 position: currentLocation
             });
 
+            //ADD CIRCLE RADIUS
             var cityCircle = new google.maps.Circle({
               strokeColor: '#542888',
               strokeOpacity: 0.8,
@@ -248,7 +212,7 @@ function codeAddress(address) {
               radius: xRadius
             });
             
-            
+            //CALLING JSON ON getList FUNCTION
             getList();
         }
     });
@@ -266,12 +230,14 @@ function getLocation() {
   }
 }
 
+//IF GEOLOCATION SUCCESS to get the currentLocation
 function showPosition(position) {
-    console.log(position);
+    //console.log(position);
     currentLocation = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
     initMap();
 }
 
+//FUNCTION IF GEOLOCATION NOT ALLOWED, ETC
 function showError(error) {
   switch(error.code) {
       case error.PERMISSION_DENIED:
@@ -298,7 +264,7 @@ function showError(error) {
 }
 //GET CURRENT LOCATION//
 
-//INIT MAP
+//INIT MAP FUNCTION
 var initMap = function() {
 
   var mapOptions = {
@@ -330,6 +296,7 @@ var initMap = function() {
   getList();
 }, //INIT MAP//
 
+//GET LIST FROM JSON
 getList = function() {
 
   var sortMarkerInRange = [];
@@ -338,9 +305,11 @@ getList = function() {
   bunchAvristData = [];
   bunchAdmedikaData = [];
 
+  //EACH DATA FROM cityList.lists JSON
   $.each( cityList.lists, function( key, value ) {
     //console.log(value);
 
+    //EACH DATA FROM cityList.lists.avrist and cityList.lists.admedika JSON
     $.each(value, function(k, v) {
 
       //LOOPING MARKER FROM JSON//
@@ -365,9 +334,7 @@ getList = function() {
 
       //LOOPING MARKER FROM JSON//
       
-      
-
-
+      //GET DISTANCE FROM CURRENT LOCATION TO EACH MARKER
       var distance_from_location = google.maps.geometry.spherical.computeDistanceBetween(currentLocation, position);
       var distance_in_km = (distance_from_location / 1000).toFixed(1);
       //console.log(distance_in_km + 'km');
@@ -376,15 +343,17 @@ getList = function() {
         // console.log(v.category_code);
         // console.log(v.category_name);
 
+        //add property radius to each data
         v.radius = distance_in_km;
 
+        //Make EACH DATA TO OBJECT
         if(v.category_code === 'Avrist') {
-          console.log('avrist');
+          //console.log('avrist');
           // $('.avrist-map-1 #Avrist').append(avrist);
           bunchAvristData.push(v);
         }
         else if(v.category_code === 'admedika') {
-          console.log('admedika');
+          //console.log('admedika');
           // $('.avrist-map-1 #AdMedika').append(avrist);
           bunchAdmedikaData.push(v);
         }
@@ -394,6 +363,7 @@ getList = function() {
 
   });
 
+  //SORT DATA FROM SMALL RADIUS TO BIG
   $('.avrist-map-1 #Avrist').html('');
   $('.avrist-map-1 #AdMedika').html('');
 
@@ -404,10 +374,10 @@ getList = function() {
       return parseFloat(a.radius) - parseFloat(b.radius);
   });
 
-  console.log(bunchAvristData);
-  console.log(bunchAdmedikaData);
+  //console.log(bunchAvristData);
+  //console.log(bunchAdmedikaData);
 
-
+  //APPEND AVRIST DATA TO ELEMENT AFTER GET SORTED
   $.each(bunchAvristData, function(idx, v){    
     var avrist = "<div class=\"pane-box\" data-tipe=\"avrist\">" +
           "<span class=\"font-18 font-xs-14 title\">"+ v.category_name +" </span>" +
@@ -421,6 +391,7 @@ getList = function() {
       $('.avrist-map-1 #Avrist').append(avrist);
   });
 
+  //APPEND ADMEDIKA DATA TO ELEMENT AFTER GET SORTED
   $.each(bunchAdmedikaData, function(idx, v){    
     var avrist = "<div class=\"pane-box\" data-tipe=\"avrist\">" +
           "<span class=\"font-18 font-xs-14 title\">"+ v.category_name +" </span>" +
@@ -438,8 +409,10 @@ getList = function() {
 
 $(document).ready(function(){
 
+  //INIT MAP WITH getLocation FUNCTION
   getLocation();
 
+  //SEARCH FUNCTION
   $('.avrist-map-1 #searchButton').on('click', function(){
     $('.avrist-map-1 #Avrist').empty();
     $('.avrist-map-1 #AdMedika').empty();
@@ -452,6 +425,7 @@ $(document).ready(function(){
     var lokasi = $('#mapSearch').val();
     codeAddress(lokasi);
   });
+  //SEARCH FUNCTION//
 
 });
 

@@ -1,0 +1,96 @@
+<!--avrist-map-1-->
+<section class="avrist-search-result avrist-map-1">
+	<div class="container">
+		<div class="contPad">
+			<ul>
+				<li>
+					<p class="font-18 color-grey padding-left-xs-10 font-xs-10">Pilih Kota :</p>
+				</li>
+				<li>
+					<div class="text-style-1">
+						<input id="mapSearch" type="text" placeholder="Cari Lokasi . ." value="">
+						<button id="searchButton"><i class="fa fa-search color-ali"></i></button>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="location-finder" class="map-par">
+		
+		<div id="map-canvas"></div>
+
+		<div class="container">
+			<div class="contPad map-nav">
+				<div class="box-nav">
+					<ul class="box-nav-tabs">
+					  <li class="active"><a data-toggle="tab" href="#Avrist">Rekanan Avrist</a></li>
+					  <li><a data-toggle="tab" href="#AdMedika">Rekanan AdMedika</a></li>
+					</ul>
+					<span class="label"><img src="./assets/images/icon-location.png"> <span>Lokasi Terdekat</span></span>
+
+					<div class="tab-content">
+
+					  <div id="Avrist" class="tab-pane fade in active">
+
+					    <!-- <div class="active pane-box" data-tipe="avrist">
+					    	<span class="font-18 font-xs-14 title">RS. ROYAL PROGRESS INTERNATIONAL</span>
+					    	<br>
+					    	<span class="font-14 font-xs-12">
+					    		JL. Danau Sunter Utara, Sunter Paradise
+					    		<br>Jakarta Utara
+					    		<br>021-6459877 ; 6400261
+					    	</span>
+					    	<span class="distance">4.3 km</span>
+							<a href="#" class="btn-violet margin-top-25">Buka di Google Maps</a>
+					    </div>
+					    <div class="pane-box" data-tipe="avrist">
+					    	<span class="font-18 font-xs-14 title">RS. ROYAL PROGRESS INTERNATIONAL</span>
+					    	<br>
+					    	<span class="font-14 font-xs-12">
+					    		JL. Danau Sunter Utara, Sunter Paradise
+					    		<br>Jakarta Utara
+					    		<br>021-6459877 ; 6400261
+					    	</span>
+					    	<span class="distance">4.3 km</span>
+							<a href="#" class="btn-violet margin-top-25">Buka di Google Maps</a>
+					    </div> -->
+
+					  </div>
+
+					  <div id="AdMedika" class="tab-pane fade">
+
+					    <!-- <div class="active pane-box" data-tipe="AdMedika">
+					    	<span class="font-18 font-xs-14 title">RS. ROYAL PROGRESS INTERNATIONAL</span>
+					    	<br>
+					    	<span class="font-14 font-xs-12">
+					    		JL. Danau Sunter Utara, Sunter Paradise
+					    		<br>Jakarta Utara
+					    		<br>021-6459877 ; 6400261
+					    	</span>
+					    	<span class="distance">4.3 km</span>
+							<a href="#" class="btn-violet margin-top-25">Buka di Google Maps</a>
+					    </div>
+					    <div class="pane-box" data-tipe="AdMedika">
+					    	<span class="font-18 font-xs-14 title">RS. ROYAL PROGRESS INTERNATIONAL</span>
+					    	<br>
+					    	<span class="font-14 font-xs-12">
+					    		JL. Danau Sunter Utara, Sunter Paradise
+					    		<br>Jakarta Utara
+					    		<br>021-6459877 ; 6400261
+					    	</span>
+					    	<span class="distance">4.3 km</span>
+							<a href="#" class="btn-violet margin-top-25">Buka di Google Maps</a>
+					    </div> -->
+
+					  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</section>
+<!--avrist-map-1-->
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChTxbt2T197EdUM9mdtAq_Sx7u7XujeyY&libraries=places,geometry"></script>

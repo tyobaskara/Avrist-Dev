@@ -58,6 +58,7 @@
 		    	position: relative;
 		    	top: auto;
 		    	overflow-y: initial;
+		    	max-height: none;
 		    }
 			.label {
 				font-size: 24px;
@@ -108,7 +109,8 @@
 					.btn-violet {
 						display: none;
 					    @media screen and (max-width: 1023px) {
-							display: inline-block;
+							display: block;
+						    max-width: 225px;
 					    }
 					}
 					.distance {

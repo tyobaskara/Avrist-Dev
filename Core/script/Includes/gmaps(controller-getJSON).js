@@ -1,150 +1,3 @@
-var cityList = {
-    "lists": {
-        "avrist": [{
-            "latitude": -6.1710743,
-            "longitude": 106.7676787,
-            "category_name": "RS. ROYAL PROGRESS INTERNATIONAL",
-            "category_code": "Avrist",
-            "region_name": "DKI Jakarta",
-            "address": "JL. Danau Sunter Utara, Sunter Paradise",
-            "image": "https:\/\/www.btpn.com\/website\/static\/img\/orange-pin.png",
-            "phone": "021-6459877 ; 6400261",
-            "link": "#"
-        }, {
-            "latitude": -6.1626329,
-            "longitude": 106.826826,
-            "category_name": "RSIA. HERMINA PODOMORO6",
-            "category_code": "Avrist",
-            "region_name": "DKI Jakarta",
-            "address": "JL. Danau Sunter Utara, Sunter Paradise",
-            "image": "https:\/\/www.btpn.com\/website\/static\/img\/orange-pin.png",
-            "phone": "021-6459877 ; 6400261",
-            "link": "#"
-        }, {
-            "latitude": -6.1408551,
-            "longitude": 106.8166858,
-            "category_name": "RS GADING PLUIT",
-            "category_code": "Avrist",
-            "region_name": "DKI Jakarta",
-            "address": "JL. Danau Sunter Utara, Sunter Paradise",
-            "image": "https:\/\/www.btpn.com\/website\/static\/img\/orange-pin.png",
-            "phone": "021-6459877 ; 6400261",
-            "link": "#"
-        }, {
-            "latitude": -6.2388073,
-            "longitude": 106.810696,
-            "category_name": "RS. ATMA JAYA",
-            "category_code": "Avrist",
-            "region_name": "DKI Jakarta",
-            "address": "JL. Danau Sunter Utara, Sunter Paradise",
-            "image": "https:\/\/www.btpn.com\/website\/static\/img\/orange-pin.png",
-            "phone": "021-6459877 ; 6400261",
-            "link": "#"
-        }, {
-            "latitude": -6.238894,
-            "longitude": 106.849261,
-            "category_name": "RS. ROYAL PROGRESS INTERNATIONAL2",
-            "category_code": "Avrist",
-            "region_name": "DKI Jakarta",
-            "address": "JL. Danau Sunter Utara, Sunter Paradise",
-            "image": "https:\/\/www.btpn.com\/website\/static\/img\/orange-pin.png",
-            "phone": "021-6459877 ; 6400261",
-            "link": "#"
-        }, {
-            "latitude": -6.220923,
-            "longitude": 106.7832011,
-            "category_name": "RS. ATMA JAYA2",
-            "category_code": "Avrist",
-            "region_name": "DKI Jakarta",
-            "address": "JL. Danau Sunter Utara, Sunter Paradise",
-            "image": "https:\/\/www.btpn.com\/website\/static\/img\/orange-pin.png",
-            "phone": "021-6459877 ; 6400261",
-            "link": "#"
-        }, {
-            "latitude": -6.1993611,
-            "longitude": 106.8863427,
-            "category_name": "RS GADING PLUIT2",
-            "category_code": "Avrist",
-            "region_name": "DKI Jakarta",
-            "address": "JL. Danau Sunter Utara, Sunter Paradise",
-            "image": "https:\/\/www.btpn.com\/website\/static\/img\/orange-pin.png",
-            "phone": "021-6459877 ; 6400261",
-            "link": "#"
-        }, {
-            "latitude": -6.2038393,
-            "longitude": 106.8205089,
-            "category_name": "RSIA. HERMINA PODOMORO2",
-            "category_code": "Avrist",
-            "region_name": "DKI Jakarta",
-            "address": "JL. Danau Sunter Utara, Sunter Paradise",
-            "image": "https:\/\/www.btpn.com\/website\/static\/img\/orange-pin.png",
-            "phone": "021-6459877 ; 6400261",
-            "link": "#"
-        }, {
-            "latitude": -6.2412612,
-            "longitude": 106.9936029,
-            "category_name": "RSIA. HERMINA PODOMORO3",
-            "category_code": "Avrist",
-            "region_name": "DKI Jakarta",
-            "address": "JL. Danau Sunter Utara, Sunter Paradise",
-            "image": "https:\/\/www.btpn.com\/website\/static\/img\/orange-pin.png",
-            "phone": "021-6459877 ; 6400261",
-            "link": "#"
-        }],
-        "admedika": [{
-            "latitude": -6.2264086,
-            "longitude": 106.8323349,
-            "category_name": "RSIA. HERMINA PODOMORO5",
-            "category_code": "Admedika",
-            "region_name": "DKI Jakarta",
-            "address": "JL. Danau Sunter Utara, Sunter Paradise",
-            "image": "https:\/\/www.btpn.com\/website\/static\/img\/orange-pin.png",
-            "phone": "021-6459877 ; 6400261",
-            "link": "#"
-        },{
-            "latitude": -6.177511,
-            "longitude": 106.8000409,
-            "category_name": "RSIA. HERMINA PODOMORO",
-            "category_code": "admedika",
-            "region_name": "DKI Jakarta",
-            "address": "JL. Danau Sunter Utara, Sunter Paradise",
-            "image": "https:\/\/www.btpn.com\/website\/static\/img\/orange-pin.png",
-            "phone": "021-6459877 ; 6400261",
-            "link": "#"
-        }, {
-            "latitude": -6.197726,
-            "longitude": 106.6768289,
-            "category_name": "RSIA. HERMINA PODOMORO7",
-            "category_code": "admedika",
-            "region_name": "DKI Jakarta",
-            "address": "JL. Danau Sunter Utara, Sunter Paradise",
-            "image": "https:\/\/www.btpn.com\/website\/static\/img\/orange-pin.png",
-            "phone": "021-6459877 ; 6400261",
-            "link": "#"
-        }, {
-            "latitude": -6.1243535,
-            "longitude": 106.8300677,
-            "category_name": "RSIA. HERMINA PODOMORO8",
-            "category_code": "admedika",
-            "region_name": "DKI Jakarta",
-            "address": "JL. Danau Sunter Utara, Sunter Paradise",
-            "image": "https:\/\/www.btpn.com\/website\/static\/img\/orange-pin.png",
-            "phone": "021-6459877 ; 6400261",
-            "link": "#"
-        }, {
-            "latitude": -6.1767764314052,
-            "longitude": 106.7886325209,
-            "category_name": "RSIA. HERMINA PODOMORO9",
-            "category_code": "admedika",
-            "region_name": "DKI Jakarta",
-            "address": "JL. Danau Sunter Utara, Sunter Paradise",
-            "image": "https:\/\/www.btpn.com\/website\/static\/img\/orange-pin.png",
-            "phone": "021-6459877 ; 6400261",
-            "link": "#"
-        }, ]
-    }
-}
-
 //INFO WINDOW//
 String.prototype.myFormat = function() {
     var s = this,
@@ -170,7 +23,7 @@ var zoom = 12;
 var bunchAllData = [];
 var bunchData = {};
 var infowindow = new google.maps.InfoWindow();
-
+var results = {};
 
 //UNTUK SEARCH MAP
 function codeAddress(address) {
@@ -296,8 +149,31 @@ var initMap = function() {
   getList();
 }, //INIT MAP//
 
+// GET JSON FROM CONTROLLER
+getMapList = function() {
+
+    //http://avrist.localhost/?controller=HospitalProvider&action=list
+    //$.getJSON( window.location.protocol + '//' + window.location.hostname + '/generate-branch' )
+
+    $.getJSON( window.location.protocol + '//' + 'avrist.localhost/?controller=HospitalProvider&action=list' )
+      .done(function( res ) {
+        getList(res);
+        results = res;
+        //console.log(results);
+    })
+      .fail(function( jqxhr, textStatus, error ) {
+        var err = textStatus + ", " + error;
+        console.log( "Request Failed: " + err );
+    });
+
+},
+
 //GET LIST FROM JSON
-getList = function() {
+getList = function(result) {
+
+  //get data from json controller//
+  var getData = result.list;
+  //get data from json controller//
 
   var sortMarkerInRange = [];
 
@@ -306,7 +182,10 @@ getList = function() {
   bunchAdmedikaData = [];
 
   //EACH DATA FROM cityList.lists JSON
-  $.each( cityList.lists, function( key, value ) {
+  //$.each( cityList.lists, function( key, value ) {
+
+  //EACH DATA FROM JSON CONTROLLER getData
+  $.each( getData, function( key, value ) {
     //console.log(value);
 
     //EACH DATA FROM cityList.lists.avrist and cityList.lists.admedika JSON
@@ -322,7 +201,7 @@ getList = function() {
       });
 
         //INFO WINDOW//
-        var categoryName   = v.category_name ,
+        var categoryName   = v.name ,
         message = markerBauble.myFormat(categoryName);
 
         google.maps.event.addListener(marker, 'click', function () {
@@ -340,19 +219,19 @@ getList = function() {
       //console.log(distance_in_km + 'km');
 
       if ((distance_from_location <= xRadius)) {
-        // console.log(v.category_code);
-        // console.log(v.category_name);
+        // console.log(v.category);
+        // console.log(v.name);
 
         //add property radius to each data
         v.radius = distance_in_km;
 
         //Make EACH DATA TO OBJECT
-        if(v.category_code === 'Avrist') {
+        if(v.category === 'avrist') {
           //console.log('avrist');
           // $('.avrist-map-1 #Avrist').append(avrist);
           bunchAvristData.push(v);
         }
-        else if(v.category_code === 'admedika') {
+        else if(v.category === 'admedika') {
           //console.log('admedika');
           // $('.avrist-map-1 #AdMedika').append(avrist);
           bunchAdmedikaData.push(v);
@@ -380,7 +259,7 @@ getList = function() {
   //APPEND AVRIST DATA TO ELEMENT AFTER GET SORTED
   $.each(bunchAvristData, function(idx, v){    
     var avrist = "<div class=\"pane-box\" data-tipe=\"avrist\">" +
-          "<span class=\"font-18 font-xs-14 title\">"+ v.category_name +" </span>" +
+          "<span class=\"font-18 font-xs-14 title\">"+ v.name +" </span>" +
           "<br>" +
           "<span class=\"font-14 font-xs-12\">"+ v.address + 
           "<br>"+ v.region_name +
@@ -394,7 +273,7 @@ getList = function() {
   //APPEND ADMEDIKA DATA TO ELEMENT AFTER GET SORTED
   $.each(bunchAdmedikaData, function(idx, v){    
     var avrist = "<div class=\"pane-box\" data-tipe=\"avrist\">" +
-          "<span class=\"font-18 font-xs-14 title\">"+ v.category_name +" </span>" +
+          "<span class=\"font-18 font-xs-14 title\">"+ v.name +" </span>" +
           "<br>" +
           "<span class=\"font-14 font-xs-12\">"+ v.address + 
           "<br>"+ v.region_name +
