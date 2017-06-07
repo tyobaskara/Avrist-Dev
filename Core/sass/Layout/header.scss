@@ -1,5 +1,17 @@
-#site-header {
-
+body {
+	&.menu-opened {
+		&:before {
+		    position: fixed;
+		    top: 0;
+		    left: 0;
+		    right: 0;
+		    bottom: 0;
+		    background: rgba(0,0,0,0.5);
+		    content: ' ';
+		    z-index: 5;
+		    transition: background .3s ease-in-out;
+		}
+	}
 }
 
 .breakVer {
@@ -69,7 +81,9 @@
 			font-size: initial;
 			display: inline-block;
 			vertical-align: middle;
-			margin-top: 25px;
+			a {
+				display: inline-block;
+			}
 			.plus {
 			    margin-left: 15px;
 			    display: inline-block;
@@ -321,6 +335,7 @@
 						&.logo-header {
 						    position: relative;
     						top: -5px;
+    						line-height: 77px;
 						}
 					}
 				}
@@ -817,6 +832,8 @@
 			line-height: 75px;
 			padding-right: 35px;
 			padding-left: 25px;
+			color: $greyText3;
+			font-size: 18px;
 			&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
 			  color: $greyText3;
 			  font-size: 18px;
