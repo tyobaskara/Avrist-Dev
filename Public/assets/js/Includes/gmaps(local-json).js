@@ -305,8 +305,6 @@ getList = function() {
   bunchAvristData = [];
   bunchAdmedikaData = [];
 
-  console.log(cityList.lists);
-
   //EACH DATA FROM cityList.lists JSON
   $.each( cityList.lists, function( key, value ) {
     //console.log(value);
