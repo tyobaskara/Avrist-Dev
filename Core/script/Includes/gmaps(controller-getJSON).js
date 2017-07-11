@@ -167,14 +167,14 @@
           console.log( "Request Failed: " + err );
       });
 
-  },
+  }
 
   //GET LIST FROM JSON
-  getList = function(result) {
+  function getList(result) {
 
     //get data from json controller//
     var getData = result.list;
-    //console.log(getData.avrist[0].name);
+    console.log(getData.avrist[0]);
     //get data from json controller//
 
     var sortMarkerInRange = [];

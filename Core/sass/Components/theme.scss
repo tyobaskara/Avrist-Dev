@@ -1,4 +1,7 @@
 .greyTheme {
+	.color-ali {
+		color: $grey1 !important;
+	}
 	.avrist-slider-2 .av-sl2-slider .av-sl2-box>a .btn-violet {
 	    background: $grey1;
 	}
@@ -129,6 +132,27 @@
 	    color: $grey1;
 	}
 
+	.simulasi-produk-2 {
+		background: $grey1;
+		.sp2-box {
+			h3 {
+				color: $grey1;
+			}
+		}
+		.sp2-box .sp2-result .number {
+			color: $grey1;
+		}
+		.btn-violet {
+			background: $grey1;
+		}
+		.sp2-box .btnPar i {
+		    color: $grey1;
+		}
+		.sp2-box .btnPar .refresh {
+		    border: 1px solid $grey1;
+		}
+	}
+
 }
 
 .greyBody {
@@ -140,6 +164,9 @@
 }
 
 .greenTheme {
+	.color-ali {
+		color: $green1 !important;
+	}
 	.avrist-slider-2 .av-sl2-slider .av-sl2-box>a .btn-violet {
 	    background: $green1;
 	}
@@ -301,6 +328,27 @@
 
 	.avrist-header-1 .ul-par>li.mid .dropdown-menu .dropdown-1 h4 {
 	    color: $green1;
+	}
+
+	.simulasi-produk-2 {
+		background: $green1;
+		.sp2-box {
+			h3 {
+				color: $green1;
+			}
+		}
+		.sp2-box .sp2-result .number {
+			color: $green1;
+		}
+		.btn-violet {
+			background: $green1;
+		}
+		.sp2-box .btnPar i {
+		    color: $green1;
+		}
+		.sp2-box .btnPar .refresh {
+		    border: 1px solid $green1;
+		}
 	}
 
 }

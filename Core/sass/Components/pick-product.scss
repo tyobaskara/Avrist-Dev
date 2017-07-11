@@ -5,8 +5,8 @@
 	}
 	.pick-title {
 		position: relative;
-		p {
-			margin: 0;
+		@media screen and (min-width: 1024px) {
+			padding-right: 45%;
 		}
 		.rightBot {
 			padding-right: 25px;

@@ -1,0 +1,146 @@
+.simulasi-produk-2 {
+	background: $violet1;
+	.sp2-box {
+		width: 1000px;
+		background: white;
+		@include border-radius(10px);
+		margin: 50px auto;
+		padding: 25px;
+		@media screen and (max-width: 1023px) {
+			width: 100%;
+			margin: 20px auto;
+		}
+		.row {
+			width: 700px;
+			margin: auto;
+			padding: 20px 0;
+			border-bottom: 1px solid #e4e4e4;
+			@media screen and (max-width: 1023px) {
+				width: 100%;
+				padding: 10px 0;
+			}
+			&:last-child {
+				border-bottom: 0;
+			}
+			p, input {
+				margin: 0;
+				color: #707070;
+				font-family: 'DINPro-Bold';
+			}
+			span {
+				font-family: 'DINPro-Medium';
+				font-size: 18px;
+				color: #aaaaaa;
+			}
+			.left {
+				p {
+					font-size: 14px;
+				}
+			}
+			.right {
+				p, input {
+					font-size: 18px;
+				}
+			}
+			@media screen and (max-width: 1023px) {
+				.left, .right {
+					padding: 0;
+				}
+			}
+		}
+
+		.right-cell {
+			position: relative;
+			@media screen and (min-width: 1023px) {
+				text-align: right;
+				input {
+					width: 100px;
+				}
+				.tagRp {
+					position: absolute;
+					left: 0;
+					top: 50%;
+					transform: translateY(-50%);
+				}
+				.tagPercent, .tagYears {
+					position: absolute;
+					right: 0;
+					top: 50%;
+					transform: translateY(-50%);
+				}
+			}
+			@media screen and (max-width: 1023px) {
+				margin-top: 10px;
+				&.interest {
+					input {
+						width: 50px;
+					}
+				}
+				&.time {
+					input {
+						width: 25px;
+					}
+				}
+			}
+		}
+
+		h3 {
+			color: $violet1;
+			text-align: center;
+			font-size: 36px;
+			margin: 0;
+			margin-bottom: 25px;
+			position: relative;
+			padding-bottom: 25px;
+			&:after {
+				position: absolute;
+				content: ' ';
+				bottom: 0;
+				left: 0;
+				right: 0;
+				width: 50px;
+				height: 3px;
+				background: #ddeae9;
+				margin: auto;
+			}
+			@media screen and (max-width: 1023px) {
+				font-size: 20px;
+			}
+		}
+
+		.btnPar {
+			text-align: right;
+			margin-top: 10px;
+			button {
+				margin-left: 25px;
+				@media screen and (max-width: 1023px) {
+					margin-left: 5px;
+					&.hitung {
+						margin: 0;
+    					width: calc(100% - 56px);
+					}
+				}
+			}
+			.refresh {
+		        padding: 10px 15px 8px 15px;
+		        @include border-radius(50%);
+		        border: 1px solid $violet1;
+			}
+			i {
+				color: $violet1;
+				-moz-transform: scaleX(-1);
+		        -o-transform: scaleX(-1);
+		        -webkit-transform: scaleX(-1);
+		        transform: scaleX(-1);
+		        font-size: 18px;
+			}
+		}
+
+		.sp2-result {
+			.number {
+				font-size: 28px;
+				color: $violet1;
+			}
+		}
+	}
+}

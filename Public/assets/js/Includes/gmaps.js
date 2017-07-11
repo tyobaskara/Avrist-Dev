@@ -171,6 +171,9 @@ var bunchAllData = [];
 var bunchData = {};
 var infowindow = new google.maps.InfoWindow();
 
+//ARRAY FOR TRIGGER INFOWINDOW WITH CLICK FUNCTION
+var markers1 = [];
+var markers2 = [];
 
 //UNTUK SEARCH MAP
 function codeAddress(address) {
@@ -305,34 +308,65 @@ getList = function() {
   bunchAvristData = [];
   bunchAdmedikaData = [];
 
-  console.log(cityList.lists);
-
   //EACH DATA FROM cityList.lists JSON
   $.each( cityList.lists, function( key, value ) {
     //console.log(value);
 
     //EACH DATA FROM cityList.lists.avrist and cityList.lists.admedika JSON
     $.each(value, function(k, v) {
+      console.log(k, v);
 
       //LOOPING MARKER FROM JSON//
       var position    = new google.maps.LatLng(v.latitude, v.longitude);
       //console.log(v.latitude, v.longitude);
-      var marker      = new google.maps.Marker({
-          position: position,
-          map: map,
-          icon: './assets/images/icon-marker.png'
-      });
+
+      CategoryCodelow = v.category_code.toLowerCase();
+
+      if (CategoryCodelow == 'avrist') {
+        markers1[k]      = new google.maps.Marker({
+            position: position,
+            map: map,
+            icon: './assets/images/icon-marker.png',
+            animation : google.maps.Animation.DROP
+        });
 
         //INFO WINDOW//
         var categoryName   = v.category_name ,
         message = markerBauble.myFormat(categoryName);
 
-        google.maps.event.addListener(marker, 'click', function () {
+        google.maps.event.addListener(markers1[k], 'click', function () {
             infowindow.setContent(message)
-            infowindow.open(map, marker)
+            infowindow.open(map, markers1[k])
             $('.gm-style-iw').parent().addClass('gm-style-par')
         });
         //INFO WINDOW//
+
+        v.dataMarker = k;
+
+      }
+      else if (CategoryCodelow == 'admedika') {
+        markers2[k]      = new google.maps.Marker({
+            position: position,
+            map: map,
+            icon: './assets/images/icon-marker.png',
+            animation : google.maps.Animation.DROP
+        });
+
+        //INFO WINDOW//
+        var categoryName   = v.category_name ,
+        message = markerBauble.myFormat(categoryName);
+
+        google.maps.event.addListener(markers2[k], 'click', function () {
+            infowindow.setContent(message)
+            infowindow.open(map, markers2[k])
+            $('.gm-style-iw').parent().addClass('gm-style-par')
+        });
+        //INFO WINDOW//
+
+        v.dataMarker = k;
+        
+      }
+
 
       //LOOPING MARKER FROM JSON//
       
@@ -349,12 +383,12 @@ getList = function() {
         v.radius = distance_in_km;
 
         //Make EACH DATA TO OBJECT
-        if(v.category_code === 'Avrist') {
+        if(CategoryCodelow === 'avrist') {
           //console.log('avrist');
           // $('.avrist-map-1 #Avrist').append(avrist);
           bunchAvristData.push(v);
         }
-        else if(v.category_code === 'admedika') {
+        else if(CategoryCodelow === 'admedika') {
           //console.log('admedika');
           // $('.avrist-map-1 #AdMedika').append(avrist);
           bunchAdmedikaData.push(v);
@@ -381,7 +415,8 @@ getList = function() {
 
   //APPEND AVRIST DATA TO ELEMENT AFTER GET SORTED
   $.each(bunchAvristData, function(idx, v){    
-    var avrist = "<div class=\"pane-box\" data-tipe=\"avrist\">" +
+    if (idx == 0) {
+      var avrist = "<div class=\"pane-box active\" data-tipe=\"avrist\" data-marker=\""+ v.dataMarker + "\">" +
           "<span class=\"font-18 font-xs-14 title\">"+ v.category_name +" </span>" +
           "<br>" +
           "<span class=\"font-14 font-xs-12\">"+ v.address + 
@@ -391,11 +426,25 @@ getList = function() {
           "<a href="+ v.link +" class=\"btn-violet margin-top-25\">Buka di Google Maps</a>" +
           "</div>";
       $('.avrist-map-1 #Avrist').append(avrist);
+    }
+    else {
+      var avrist = "<div class=\"pane-box\" data-tipe=\"avrist\" data-marker=\""+ v.dataMarker + "\">" +
+          "<span class=\"font-18 font-xs-14 title\">"+ v.category_name +" </span>" +
+          "<br>" +
+          "<span class=\"font-14 font-xs-12\">"+ v.address + 
+          "<br>"+ v.region_name +
+          "<br>"+ v.phone +"</span>" +
+          "<span class=\"distance\">"+ v.radius + " km</span>" +
+          "<a href="+ v.link +" class=\"btn-violet margin-top-25\">Buka di Google Maps</a>" +
+          "</div>";
+      $('.avrist-map-1 #Avrist').append(avrist);
+    }
   });
 
   //APPEND ADMEDIKA DATA TO ELEMENT AFTER GET SORTED
   $.each(bunchAdmedikaData, function(idx, v){    
-    var avrist = "<div class=\"pane-box\" data-tipe=\"avrist\">" +
+    if (idx == 0) {
+      var avrist = "<div class=\"pane-box active\" data-tipe=\"avrist\" data-marker=\""+ v.dataMarker + "\">" +
           "<span class=\"font-18 font-xs-14 title\">"+ v.category_name +" </span>" +
           "<br>" +
           "<span class=\"font-14 font-xs-12\">"+ v.address + 
@@ -405,6 +454,19 @@ getList = function() {
           "<a href="+ v.link +" class=\"btn-violet margin-top-25\">Buka di Google Maps</a>" +
           "</div>";
       $('.avrist-map-1 #AdMedika').append(avrist);
+    }
+    else {
+      var avrist = "<div class=\"pane-box\" data-tipe=\"avrist\" data-marker=\""+ v.dataMarker + "\">" +
+          "<span class=\"font-18 font-xs-14 title\">"+ v.category_name +" </span>" +
+          "<br>" +
+          "<span class=\"font-14 font-xs-12\">"+ v.address + 
+          "<br>"+ v.region_name +
+          "<br>"+ v.phone +"</span>" +
+          "<span class=\"distance\">"+ v.radius + " km</span>" +
+          "<a href="+ v.link +" class=\"btn-violet margin-top-25\">Buka di Google Maps</a>" +
+          "</div>";
+      $('.avrist-map-1 #AdMedika').append(avrist);
+    }
   });
 
 }
@@ -428,6 +490,28 @@ $(document).ready(function(){
     codeAddress(lokasi);
   });
   //SEARCH FUNCTION//
+
+  //ELEMENT CLICK TRIGGER INFO WINDOW OPEN
+  $(document).on("click", "#Avrist .pane-box", function(){
+      var markerVal = $(this).attr('data-marker');
+      google.maps.event.trigger(markers1[markerVal], 'click');
+      $('#Avrist .pane-box').removeClass('active');
+      $(this).addClass('active');
+      if ($(window).width() < 1024) {
+        $('html, body').animate({scrollTop:$('#map-canvas').position().top}, 'slow');
+      }
+  });
+
+  $(document).on("click", "#AdMedika .pane-box", function(){
+      var markerVal = $(this).attr('data-marker');
+      google.maps.event.trigger(markers2[markerVal], 'click');
+      $('#Avrist .pane-box').removeClass('active');
+      $(this).addClass('active');
+      if ($(window).width() < 1024) {
+        $('html, body').animate({scrollTop:$('#map-canvas').position().top}, 'slow');
+      }
+  });
+  //ELEMENT CLICK TRIGGER INFO WINDOW OPEN//
 
 });
 

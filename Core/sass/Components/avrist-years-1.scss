@@ -1,4 +1,10 @@
 .avrist-years-1 {
+	.ay1-slider-content {
+		@media screen and (min-width: 1024px) {
+		    width: 30%;
+	    	margin: auto;
+		}
+	}
 	.ay1-slider {
 		transform: rotate(180deg);
 		
@@ -19,7 +25,7 @@
 		}
 		.ay1-box {
 			position: relative;
-			padding: 35px;
+			padding: 40px 35px;
 			p {
 				color: $greyText3;
 			}

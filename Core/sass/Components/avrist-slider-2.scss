@@ -1,5 +1,12 @@
 .avrist-slider-2 {
 	overflow: hidden;
+	.contPad {
+		> div:nth-child(1) {
+			@media screen and (min-width: 1023px){
+				width: 50%;
+			}
+		}
+	}
 	.av-sl2-slider {
 		padding: 25px 0;
 		padding-bottom: 75px;
